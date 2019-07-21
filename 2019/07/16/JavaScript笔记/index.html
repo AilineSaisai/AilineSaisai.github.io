@@ -122,12 +122,12 @@
 <meta property="og:site_name" content="Ailine">
 <meta property="og:description" content="JavaScript[TOC] ==目标：学习JavaScript，掌握JavaScript核心知识，能够灵活运用其语法知识。== ==计划：一个月的学习时间，每天学习两个小时（如果可以的话）。== 简介：JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTM">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="e:%5CGameDownload%5C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5C%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%5Cimages%5C%E4%BC%98%E5%85%88%E7%BA%A7.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CGameDownload%5C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5C%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%5Cimages%5C%E4%BC%98%E5%85%88%E7%BA%A7.png">
 <meta property="og:updated_time" content="2019-07-21T07:04:05.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript笔记">
 <meta name="twitter:description" content="JavaScript[TOC] ==目标：学习JavaScript，掌握JavaScript核心知识，能够灵活运用其语法知识。== ==计划：一个月的学习时间，每天学习两个小时（如果可以的话）。== 简介：JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTM">
-<meta name="twitter:image" content="e:%5CGameDownload%5C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5C%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%5Cimages%5C%E4%BC%98%E5%85%88%E7%BA%A7.png">
+<meta name="twitter:image" content="http://yoursite.com/.com//E:%5CGameDownload%5C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5C%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%5Cimages%5C%E4%BC%98%E5%85%88%E7%BA%A7.png">
 
 
 
@@ -412,7 +412,7 @@
 </ol>
 <h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p><strong>运算符又叫操作符，</strong>==运算符可以对一个或多个值进行运算，并返回结果。比如<strong>typeo</strong>f就是一个运算符，用于返回一个变量的类型，以字符串的形式返回类型名。==</p>
 <p><strong>支持四则运算，逻辑运算符和取摸（%）运算符等等，和Java相似。</strong>特殊的任何数和NaN做运算都的NaN；字符串相加和java一样，拼接效果。</p>
-<p><img src="E:%5CGameDownload%5C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5C%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%5Cimages%5C%E4%BC%98%E5%85%88%E7%BA%A7.png" alt></p>
+<p><img src="/.com//E:%5CGameDownload%5C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5C%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%5Cimages%5C%E4%BC%98%E5%85%88%E7%BA%A7.png" alt></p>
 <h4 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h4><p><strong>和Java相识——判断，循环，switch选择语句</strong></p>
 <p>判断语句：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		<span class="keyword">var</span> year = prompt(<span class="string">'请输入年份'</span>);</span><br><span class="line">		<span class="keyword">if</span>(year%<span class="number">4</span>==<span class="number">0</span> &amp;&amp; year%<span class="number">100</span>!=<span class="number">0</span> || year%<span class="number">400</span>==<span class="number">0</span>)&#123;</span><br><span class="line">			alert(<span class="string">'您输入的'</span>+year+<span class="string">'是闰年'</span>)</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			alert(<span class="string">'您输入的'</span>+year+<span class="string">'不是闰年'</span>)</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
