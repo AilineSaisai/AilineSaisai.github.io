@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-20T02:28:43.736Z</updated>
+  <updated>2019-07-21T06:36:43.911Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,43 +17,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第一篇博客文章</title>
-    <link href="http://yoursite.com/2019/07/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2019/07/20/我的第一篇博客文章/</id>
-    <published>2019-07-20T02:17:00.000Z</published>
-    <updated>2019-07-20T02:28:43.736Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;我的第一篇博客文章&quot;&gt;&lt;a href=&quot;#我的第一篇博客文章&quot; class=&quot;headerlink&quot; title=&quot;我的第一篇博客文章&quot;&gt;&lt;/a&gt;我的第一篇博客文章&lt;/h1&gt;&lt;h4 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2019/07/20/hello-world/"/>
     <id>http://yoursite.com/2019/07/20/hello-world/</id>
     <published>2019-07-20T02:07:17.024Z</published>
-    <updated>2019-07-20T02:07:17.024Z</updated>
+    <updated>2019-07-21T06:36:43.911Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -65,17 +37,14 @@
     <link href="http://yoursite.com/2019/07/16/JavaScript%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2019/07/16/JavaScript笔记/</id>
     <published>2019-07-16T10:33:37.811Z</published>
-    <updated>2019-07-20T14:57:38.575Z</updated>
+    <updated>2019-07-21T06:36:26.854Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&quot;&gt;&lt;/a&gt;JavaScript&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;==目标：学习JavaScript，掌握JavaScript核心知识，能够灵活运用其语法知识。==&lt;/p&gt;
+&lt;p&gt;==计划：一个月的学习时间，每天学习两个小时（如果可以的话）。==&lt;/p&gt;
+&lt;p&gt;简介：JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在&lt;a href=&quot;https://baike.baidu.com/item/HTML&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTML&lt;/a&gt;（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能.&lt;/p&gt;
     
     </summary>
     
