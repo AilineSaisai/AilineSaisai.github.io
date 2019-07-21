@@ -37,7 +37,7 @@
     <link href="http://yoursite.com/2019/07/16/JavaScript%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2019/07/16/JavaScript笔记/</id>
     <published>2019-07-16T10:33:37.811Z</published>
-    <updated>2019-07-21T12:01:06.019Z</updated>
+    <updated>2019-07-21T14:05:45.928Z</updated>
     
     <summary type="html">
     
@@ -47,6 +47,8 @@
 &lt;p&gt;简介：JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在&lt;a href=&quot;https://baike.baidu.com/item/HTML&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTML&lt;/a&gt;（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能.&lt;/p&gt;
     
     </summary>
+    
+      <category term="编程美学" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E7%BE%8E%E5%AD%A6/"/>
     
     
       <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
