@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Ailine</title>
   
-  <subtitle>吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不登高之博见也。</subtitle>
+  <subtitle>锲而不舍，金石可镂。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -37,7 +37,7 @@
     <link href="http://yoursite.com/2019/07/16/JavaScript%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2019/07/16/JavaScript笔记/</id>
     <published>2019-07-16T10:33:37.811Z</published>
-    <updated>2019-07-21T14:05:45.928Z</updated>
+    <updated>2019-07-26T12:16:16.388Z</updated>
     
     <summary type="html">
     
