@@ -114,24 +114,18 @@
 
 
 
-<meta name="description" content="MySql学习目的学习Java半年了，一直没有认真学习，一学期的时间浪费了大半。暑假时间，开始恶补自己的课程，希望毕业之前能成为成为高级程序员的一份子吧。">
+<meta name="description" content="JDBC编程学前反思马上进入大三了，对数据库的了解竟然是知之甚少。由于学校大二没有开数据库这门课，所以自己也没有看，开学又要面对数据库的等级考试，让人不觉后背一凉。学习jdbc编程可以轻松的使用java对数据库进行操作。但是反思自己的一次一次的踩坑，明明是一个很少的知识点，自己却学了两个月之久，每次都学一点就不想学了，过了很久又都忘了，这次必须在一天内看完。">
 <meta name="keywords" content="-入坑系列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySql笔记">
-<meta property="og:url" content="http://yoursite.com/2019/07/30/MySQL/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/04/JDBC/index.html">
 <meta property="og:site_name" content="Ailine">
-<meta property="og:description" content="MySql学习目的学习Java半年了，一直没有认真学习，一学期的时间浪费了大半。暑假时间，开始恶补自己的课程，希望毕业之前能成为成为高级程序员的一份子吧。">
+<meta property="og:description" content="JDBC编程学前反思马上进入大三了，对数据库的了解竟然是知之甚少。由于学校大二没有开数据库这门课，所以自己也没有看，开学又要面对数据库的等级考试，让人不觉后背一凉。学习jdbc编程可以轻松的使用java对数据库进行操作。但是反思自己的一次一次的踩坑，明明是一个很少的知识点，自己却学了两个月之久，每次都学一点就不想学了，过了很久又都忘了，这次必须在一天内看完。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://stepimagewm.how2j.cn/848.png">
-<meta property="og:image" content="http://stepimagewm.how2j.cn/876.png">
-<meta property="og:image" content="http://yoursite.com/img/%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%89%8D.png">
-<meta property="og:image" content="http://yoursite.com/img/%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%90%8E.png">
-<meta property="og:image" content="http://yoursite.com/img/%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE.png">
-<meta property="og:updated_time" content="2019-07-29T19:37:56.893Z">
+<meta property="og:updated_time" content="2019-08-18T01:50:43.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySql笔记">
-<meta name="twitter:description" content="MySql学习目的学习Java半年了，一直没有认真学习，一学期的时间浪费了大半。暑假时间，开始恶补自己的课程，希望毕业之前能成为成为高级程序员的一份子吧。">
-<meta name="twitter:image" content="http://stepimagewm.how2j.cn/848.png">
+<meta name="twitter:description" content="JDBC编程学前反思马上进入大三了，对数据库的了解竟然是知之甚少。由于学校大二没有开数据库这门课，所以自己也没有看，开学又要面对数据库的等级考试，让人不觉后背一凉。学习jdbc编程可以轻松的使用java对数据库进行操作。但是反思自己的一次一次的踩坑，明明是一个很少的知识点，自己却学了两个月之久，每次都学一点就不想学了，过了很久又都忘了，这次必须在一天内看完。">
 
 
 
@@ -160,7 +154,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/30/MySQL/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/04/JDBC/">
 
 
 
@@ -309,7 +303,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/MySQL/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/JDBC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ailine_赛赛">
@@ -338,8 +332,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T03:00:30+08:00">
-                2019-07-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-04T11:18:39+08:00">
+                2019-08-04
               </time>
             
 
@@ -398,32 +392,43 @@
       
 
       
-        <h1 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h1><h4 id="学习目的"><a href="#学习目的" class="headerlink" title="学习目的"></a>学习目的</h4><p>学习Java半年了，一直没有认真学习，一学期的时间浪费了大半。暑假时间，开始恶补自己的课程，希望毕业之前能成为成为高级程序员的一份子吧。</p>
+        <h1 id="JDBC编程"><a href="#JDBC编程" class="headerlink" title="JDBC编程"></a>JDBC编程</h1><h4 id="学前反思"><a href="#学前反思" class="headerlink" title="学前反思"></a>学前反思</h4><p>马上进入大三了，对数据库的了解竟然是知之甚少。由于学校大二没有开数据库这门课，所以自己也没有看，开学又要面对数据库的等级考试，让人不觉后背一凉。学习jdbc编程可以轻松的使用java对数据库进行操作。但是反思自己的一次一次的踩坑，明明是一个很少的知识点，自己却学了两个月之久，每次都学一点就不想学了，过了很久又都忘了，这次必须在一天内看完。</p>
 <a id="more"></a>
 
-<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database how2java</span><br></pre></td></tr></table></figure>
+<h4 id="访问数据库流程"><a href="#访问数据库流程" class="headerlink" title="访问数据库流程"></a>访问数据库流程</h4><p>驱动管理器——&gt;连接数据库——&gt;SQL语句——&gt;结果集</p>
+<h5 id="加载MySQL驱动"><a href="#加载MySQL驱动" class="headerlink" title="加载MySQL驱动"></a>加载MySQL驱动</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br></pre></td></tr></table></figure>
 
-<p><img src="http://stepimagewm.how2j.cn/848.png" alt></p>
-<h4 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h4><p>表名Hero<br>有字段<br>id<br>name<br>hp<br>damage</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE hero (</span><br><span class="line">  id int(11) AUTO_INCREMENT,</span><br><span class="line">  name varchar(30) ,</span><br><span class="line">  hp float ,</span><br><span class="line">  damage int(11) ,</span><br><span class="line">  PRIMARY KEY (id)</span><br><span class="line">)  DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
+<h5 id="连接MYSQL数据库"><a href="#连接MYSQL数据库" class="headerlink" title="连接MYSQL数据库"></a>连接MYSQL数据库</h5><p>连接对象内部其实包含了Socket对象，是一个二远程的连接。比较耗时！这是connection对象管理的一个要点</p>
+<p>真正开发中，为了提高效率，都会使用连接池来管理连接对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection c = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/数据库名&quot;,&quot;user&quot;,&quot;password&quot;)</span><br></pre></td></tr></table></figure>
 
-<h4 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into hero values (null, &apos;盖伦&apos;, 616, 100)</span><br></pre></td></tr></table></figure>
+<h5 id="Statement接口"><a href="#Statement接口" class="headerlink" title="Statement接口"></a>Statement接口</h5><ul>
+<li><p>用于执行静态SQl语句并返回他所生成结果的对象</p>
+</li>
+<li><p>三种Statement类</p>
+<ul>
+<li>Statement：用于发送简单的SQL语句（不带参数）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  Statement s = c.creatStatement();</span><br><span class="line">  String sql = &quot;xxxx&quot;;</span><br><span class="line">s.execute(sql);</span><br></pre></td></tr></table></figure>
 
-<h4 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h4><h5 id="查询所有数据"><a href="#查询所有数据" class="headerlink" title="查询所有数据"></a>查询所有数据</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from hero</span><br></pre></td></tr></table></figure>
+<ul>
+<li>PreparedStatement：带参，防止sql注入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  String sql = &quot;insert into xxx (xxx,xxx) value (?,?)&quot;;//?占位符</span><br><span class="line">  PreparedStatement ps = c.prepareStatement(sql);</span><br><span class="line">  ps.setString(1,xxx);</span><br><span class="line">  ps.setObject(2,xxx);</span><br><span class="line">ps.execute();</span><br></pre></td></tr></table></figure>
 
-<h5 id="统计表中有多少条数据"><a href="#统计表中有多少条数据" class="headerlink" title="统计表中有多少条数据"></a>统计表中有多少条数据</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select count(*) from hero</span><br></pre></td></tr></table></figure>
 
-<h5 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from hero limit 0,5</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>CallableStatement:由方法prePareCall创建，用于调用<strong>存储过程</strong></li>
+</ul>
+<h5 id="常见的Statement方法"><a href="#常见的Statement方法" class="headerlink" title="常见的Statement方法"></a>常见的Statement方法</h5><ul>
+<li>execute()：运行语句，返回是否有结果集</li>
+<li>executeQuery():  运行select语句，返回ResultSet结果集</li>
+<li>executeUpdate()：运行insert、update、delete操作，返回更新的行数</li>
+</ul>
+<h5 id="创建一个链接类"><a href="#创建一个链接类" class="headerlink" title="创建一个链接类"></a>创建一个链接类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Myjdbc</span> </span>&#123;</span><br><span class="line">	Connection c = <span class="keyword">null</span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Myjdbc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">			c =DriverManager.getConnection(<span class="string">"jdbc:mysql://localhost:3306/goods?useSSL=false"</span>, <span class="string">"user"</span>, <span class="string">"password"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="http://stepimagewm.how2j.cn/876.png" alt></p>
-<h4 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">updat hero set hp = 818 where id = 1</span><br></pre></td></tr></table></figure>
-
-<h5 id="修改前"><a href="#修改前" class="headerlink" title="修改前"></a>修改前</h5><p><img src="/img/%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%89%8D.png" alt="修改数据"></p>
-<h5 id="修改后"><a href="#修改后" class="headerlink" title="修改后"></a>修改后</h5><p><img src="/img/%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%90%8E.png" alt="修改数据"></p>
-<h4 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete from hero where id = 1</span><br></pre></td></tr></table></figure>
-
-<p><img src="/img/%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE.png" alt="删除数据"></p>
-<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p>how2j</p>
 
       
     </div>
@@ -483,8 +488,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/20/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/07/30/mybatis/" rel="next" title="mybatis">
+                <i class="fa fa-chevron-left"></i> mybatis
               </a>
             
           </div>
@@ -492,10 +497,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/30/mybatis/" rel="prev" title="mybatis">
-                mybatis <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -647,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySql"><span class="nav-number">1.</span> <span class="nav-text">MySql</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#学习目的"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">学习目的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建数据库"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建表"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">创建表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插入数据"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">插入数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查询数据"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">查询数据</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询所有数据"><span class="nav-number">1.0.0.5.1.</span> <span class="nav-text">查询所有数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#统计表中有多少条数据"><span class="nav-number">1.0.0.5.2.</span> <span class="nav-text">统计表中有多少条数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分页查询"><span class="nav-number">1.0.0.5.3.</span> <span class="nav-text">分页查询</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改数据"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">修改数据</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#修改前"><span class="nav-number">1.0.0.6.1.</span> <span class="nav-text">修改前</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改后"><span class="nav-number">1.0.0.6.2.</span> <span class="nav-text">修改后</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除数据"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">删除数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文献"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JDBC编程"><span class="nav-number">1.</span> <span class="nav-text">JDBC编程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#学前反思"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">学前反思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问数据库流程"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">访问数据库流程</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#加载MySQL驱动"><span class="nav-number">1.0.0.2.1.</span> <span class="nav-text">加载MySQL驱动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#连接MYSQL数据库"><span class="nav-number">1.0.0.2.2.</span> <span class="nav-text">连接MYSQL数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Statement接口"><span class="nav-number">1.0.0.2.3.</span> <span class="nav-text">Statement接口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#常见的Statement方法"><span class="nav-number">1.0.0.2.4.</span> <span class="nav-text">常见的Statement方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建一个链接类"><span class="nav-number">1.0.0.2.5.</span> <span class="nav-text">创建一个链接类</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
