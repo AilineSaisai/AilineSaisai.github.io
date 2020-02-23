@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-18T01:54:36.551Z</updated>
+  <updated>2020-02-23T12:54:57.275Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringBoot</title>
+    <link href="http://yoursite.com/2020/02/09/springboot/"/>
+    <id>http://yoursite.com/2020/02/09/springboot/</id>
+    <published>2020-02-09T12:06:09.522Z</published>
+    <updated>2020-02-23T12:54:57.275Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;自动配置&quot;&gt;&lt;a href=&quot;#自动配置&quot; class=&quot;headerlink&quot; title=&quot;自动配置&quot;&gt;&lt;/a&gt;自动配置&lt;/h3&gt;&lt;p&gt;序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="编程美学" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E7%BE%8E%E5%AD%A6/"/>
+    
+    
+      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
   
   <entry>
     <title>JDBC编程笔记</title>
@@ -41,11 +61,11 @@
     <link href="http://yoursite.com/2019/07/30/mybatis/"/>
     <id>http://yoursite.com/2019/07/30/mybatis/</id>
     <published>2019-07-30T06:26:59.000Z</published>
-    <updated>2019-08-18T01:52:32.662Z</updated>
+    <updated>2020-02-23T12:43:50.887Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;学习框架&quot;&gt;&lt;a href=&quot;#学习框架&quot; class=&quot;headerlink&quot; title=&quot;学习框架&quot;&gt;&lt;/a&gt;学习框架&lt;/h3&gt;&lt;p&gt;Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java是的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。&lt;/p&gt;
+      &lt;h3 id=&quot;学习框架&quot;&gt;&lt;a href=&quot;#学习框架&quot; class=&quot;headerlink&quot; title=&quot;学习框架&quot;&gt;&lt;/a&gt;学习框架&lt;/h3&gt;&lt;p&gt;Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java时的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。&lt;/p&gt;
     
     </summary>
     
@@ -95,7 +115,7 @@
     <link href="http://yoursite.com/2019/07/16/JavaScript%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2019/07/16/JavaScript笔记/</id>
     <published>2019-07-16T10:33:37.811Z</published>
-    <updated>2019-07-27T10:17:51.196Z</updated>
+    <updated>2019-11-26T09:03:38.900Z</updated>
     
     <summary type="html">
     
@@ -103,6 +123,26 @@
 &lt;p&gt;==目标：学习JavaScript，掌握JavaScript核心知识，能够灵活运用其语法知识。==&lt;/p&gt;
 &lt;p&gt;==计划：一个月的学习时间，每天学习两个小时（如果可以的话）。==&lt;/p&gt;
 &lt;p&gt;简介：JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在&lt;a href=&quot;https://baike.baidu.com/item/HTML&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTML&lt;/a&gt;（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="编程美学" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E7%BE%8E%E5%AD%A6/"/>
+    
+    
+      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode</title>
+    <link href="http://yoursite.com/2019/07/06/LeetCode/"/>
+    <id>http://yoursite.com/2019/07/06/LeetCode/</id>
+    <published>2019-07-06T13:44:29.611Z</published>
+    <updated>2020-02-23T13:06:36.092Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;了解算法及数据结构&quot;&gt;&lt;a href=&quot;#了解算法及数据结构&quot; class=&quot;headerlink&quot; title=&quot;了解算法及数据结构&quot;&gt;&lt;/a&gt;了解算法及数据结构&lt;/h3&gt;&lt;h4 id=&quot;数据结构&quot;&gt;&lt;a href=&quot;#数据结构&quot; class=&quot;headerlink&quot; title=&quot;数据结构&quot;&gt;&lt;/a&gt;数据结构&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率的算法。数据结构往往同高效的检索算法和索引技术有关。本质就是数据本身与数据之间的关系。&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     

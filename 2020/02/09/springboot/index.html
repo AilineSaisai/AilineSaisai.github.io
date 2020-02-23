@@ -96,7 +96,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="-入坑系列 -死亡框架,">
+  <meta name="keywords" content="-入坑系列,">
 
 
 
@@ -114,18 +114,18 @@
 
 
 
-<meta name="description" content="学习框架Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java时的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。">
-<meta name="keywords" content="-入坑系列 -死亡框架">
+<meta name="description" content="自动配置序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；">
+<meta name="keywords" content="-入坑系列">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mybatis">
-<meta property="og:url" content="http://yoursite.com/2019/07/30/mybatis/index.html">
+<meta property="og:title" content="SpringBoot">
+<meta property="og:url" content="http://yoursite.com/2020/02/09/springboot/index.html">
 <meta property="og:site_name" content="Ailine">
-<meta property="og:description" content="学习框架Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java时的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。">
+<meta property="og:description" content="自动配置序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-23T12:43:50.887Z">
+<meta property="og:updated_time" content="2020-02-23T12:54:57.275Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mybatis">
-<meta name="twitter:description" content="学习框架Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java时的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。">
+<meta name="twitter:title" content="SpringBoot">
+<meta name="twitter:description" content="自动配置序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；">
 
 
 
@@ -154,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/30/mybatis/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/09/springboot/">
 
 
 
 
 
-  <title>mybatis | Ailine</title>
+  <title>SpringBoot | Ailine</title>
   
 
 
@@ -303,7 +303,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/mybatis/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/09/springboot/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ailine_赛赛">
@@ -320,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mybatis</h1>
+          <h1 class="post-title" itemprop="name headline">SpringBoot</h1>
         
 
         <div class="post-meta">
@@ -332,8 +332,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T14:26:59+08:00">
-                2019-07-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-09T20:06:09+08:00">
+                2020-02-09
               </time>
             
 
@@ -342,6 +342,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程美学/" itemprop="url" rel="index">
+                    <span itemprop="name">编程美学</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -370,30 +392,19 @@
       
 
       
-        <h3 id="学习框架"><a href="#学习框架" class="headerlink" title="学习框架"></a>学习框架</h3><p>Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java时的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。</p>
+        <h3 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h3><p>序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；</p>
 <a id="more"></a>
 
-<h3 id="什么是框架"><a href="#什么是框架" class="headerlink" title="什么是框架"></a>什么是框架</h3><p><strong>他是我们软件开发中的一套解决方案，不同的框架解决的是不同的问题。</strong></p>
-<h4 id="使用框架的好处："><a href="#使用框架的好处：" class="headerlink" title="使用框架的好处："></a>使用框架的好处：</h4><p>框架封装了很多的细节，使开发者可以使用极简的方式实现功能。大大提升开发效率。</p>
-<h4 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h4><ol>
-<li>表现层：用于表示数据</li>
-<li>业务层：处理业务需求</li>
-<li>持久层：和数据库交互</li>
-</ol>
-<h4 id="持久层的几种解决方案"><a href="#持久层的几种解决方案" class="headerlink" title="持久层的几种解决方案"></a>持久层的几种解决方案</h4><ol>
-<li>JDBC技术</li>
-<li>Spring的jdbcTemplate</li>
-<li>Apache的DBUtils</li>
-</ol>
-<p><strong>以上都不是框架</strong></p>
-<p>1、是规范；2、3都是工具类</p>
-<h3 id="MyBatis框架概述"><a href="#MyBatis框架概述" class="headerlink" title="MyBatis框架概述"></a>MyBatis框架概述</h3><p><strong>mybatis是一个优秀的基于Java的持久层框架，它内部封装了jdbc，使开发者只需要关注sql语句本身，而不是花费精力去处理加载驱动、创建连接、创建statement等繁杂的过程。</strong></p>
-<h3 id="导入别人的项目出错问题"><a href="#导入别人的项目出错问题" class="headerlink" title="导入别人的项目出错问题"></a>导入别人的项目出错问题</h3><h5 id="错误一："><a href="#错误一：" class="headerlink" title="错误一："></a>错误一：</h5><p>==Error querying database.  Cause: java.sql.SQLException: Access denied for user ‘root’@’localhost’ (using password: YES)==</p>
-<p><strong>mybatis-config.xml配置文件</strong></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE configuration</span></span><br><span class="line"><span class="meta">PUBLIC "-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line"><span class="meta">"http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">"com.how2java.pojo"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">"development"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">"development"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">"JDBC"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">"POOLED"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driver"</span> <span class="attr">value</span>=<span class="string">"com.mysql.jdbc.Driver"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"url"</span> <span class="attr">value</span>=<span class="string">"jdbc:mysql://localhost:3306/mybits</span></span></span><br><span class="line"><span class="tag"><span class="string">                                            characterEncoding=UTF-8"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"root"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"。。。。"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">"com/how2java/pojo/Category.xml"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>serialVersionUID有两种显示的生成方式：</strong><br>一是默认的1L，比如：private static final long serialVersionUID = 1L;        </p>
+<p>二是根据包名，类名，继承关系，非私有的方法和属性，以及参数，返回值等诸多因子计算得出的，极度复杂生成的一个64位的哈希字段。基本上计算出来的这个值是唯一的。比如：private static final long  serialVersionUID = xxxxL;<br>注意：显示声明serialVersionUID可以避免对象不一致，</p>
+<p>当一个类实现类Serializable接口，如果没有显示定义serialVersionUIDEclipse会自动给出相应的提醒；面对这种情况，我们只需要在Eclipse中点击类的warning图标，Eclipse就会自动给出两种生成方式。如果不想定义，在Eclipse的设置中也可以把它关掉的，设置如下：<br>Window ==&gt; Preferences ==&gt; Java ==&gt; Compiler ==&gt; Error/Warnings ==&gt; Potential programming problems</p>
+<p>将Serializable class without serialVersionUID的warning改成ignore即可。</p>
+<p>当实现java.io.Serializable接口中没有显示的定义serialVersionUID变量的时候，JAVA序列化机制会根据Class自动生成一个serialVersionUID作序列化版本比较用，这种情况下，如果Class文件(类名，方法明等)没有发生变化(增加空格，换行，增加注释等等)，就算再编译多次，serialVersionUID也不会变化的。</p>
+<p>如果我们不希望通过编译来强制划分软件版本，即实现序列化接口的实体能够兼容先前版本，就需要显示的定义一个serialVersionUID，类型为long的变量。不修改这个变量值的序列化实体，都可以相互进行序列化和反序列化。</p>
+<p>（1）序列化实体类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.demo.entity.serializable; <span class="keyword">import</span> java.io.Serializable; <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Persion</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;     <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">4359709211352400087L</span>;    <span class="keyword">public</span> Long id;    <span class="keyword">public</span> String name;    <span class="keyword">public</span> <span class="keyword">final</span> String userName;     <span class="function"><span class="keyword">public</span> <span class="title">Persion</span><span class="params">(Long id, String name)</span></span>&#123;        <span class="keyword">this</span>.id = id;        <span class="keyword">this</span>.name = name;        userName = <span class="string">"dddbbb"</span>;    &#125;     <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;        <span class="keyword">return</span> id.toString() + <span class="string">"--"</span> + name.toString();    &#125;&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>错误原因：</strong></p>
-<p>数据库密码输入错误。更改数据库密码即可。</p>
+<p>（2）序列化功能：</p>
 
       
     </div>
@@ -440,7 +451,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/入坑系列-死亡框架/" rel="tag"># -入坑系列 -死亡框架</a>
+            <a href="/tags/入坑系列/" rel="tag"># -入坑系列</a>
           
         </div>
       
@@ -453,8 +464,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/30/MySQL/" rel="next" title="MySql笔记">
-                <i class="fa fa-chevron-left"></i> MySql笔记
+              <a href="/2019/08/04/JDBC/" rel="next" title="JDBC编程笔记">
+                <i class="fa fa-chevron-left"></i> JDBC编程笔记
               </a>
             
           </div>
@@ -462,10 +473,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/04/JDBC/" rel="prev" title="JDBC编程笔记">
-                JDBC编程笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -617,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#学习框架"><span class="nav-number">1.</span> <span class="nav-text">学习框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是框架"><span class="nav-number">2.</span> <span class="nav-text">什么是框架</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用框架的好处："><span class="nav-number">2.1.</span> <span class="nav-text">使用框架的好处：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三层架构"><span class="nav-number">2.2.</span> <span class="nav-text">三层架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#持久层的几种解决方案"><span class="nav-number">2.3.</span> <span class="nav-text">持久层的几种解决方案</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MyBatis框架概述"><span class="nav-number">3.</span> <span class="nav-text">MyBatis框架概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导入别人的项目出错问题"><span class="nav-number">4.</span> <span class="nav-text">导入别人的项目出错问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#错误一："><span class="nav-number">4.0.1.</span> <span class="nav-text">错误一：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自动配置"><span class="nav-number">1.</span> <span class="nav-text">自动配置</span></a></li></ol></div>
             
 
           </div>
