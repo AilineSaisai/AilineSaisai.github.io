@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-23T13:12:23.884Z</updated>
+  <updated>2020-02-24T09:39:26.034Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet</title>
+    <link href="http://yoursite.com/2020/02/24/Servlet/"/>
+    <id>http://yoursite.com/2020/02/24/Servlet/</id>
+    <published>2020-02-24T09:39:05.000Z</published>
+    <updated>2020-02-24T09:39:26.034Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Servlet&quot;&gt;&lt;a href=&quot;#Servlet&quot; class=&quot;headerlink&quot; title=&quot;Servlet&quot;&gt;&lt;/a&gt;Servlet&lt;/h1&gt;&lt;h4 id=&quot;tomcat打不开，一闪而过&quot;&gt;&lt;a href=&quot;#tomcat打不开，一闪而过&quot; class=&quot;headerlink&quot; title=&quot;tomcat打不开，一闪而过&quot;&gt;&lt;/a&gt;tomcat打不开，一闪而过&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;原因一：&lt;/strong&gt;JDK的环境变量没有用JAVA-HOME,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方法：&lt;/strong&gt;在bin目录下的setclasspath中添加&lt;/p&gt;
+&lt;p&gt;==set JAVA_HOME=E:\GameDownload\Java\jdk1.8&lt;br&gt;set JRE_HOME=E:\GameDownload\Java\jre1.8==&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原因二：&lt;/strong&gt;自己web.xml文件中配置写错了&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方法：&lt;/strong&gt;自己找出错误，一般是路径错误，&lt;url-pattern&gt;中间的值前加 “&lt;strong&gt;/&lt;/strong&gt;”&lt;/url-pattern&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://yoursite.com/2020/02/24/Linux/"/>
+    <id>http://yoursite.com/2020/02/24/Linux/</id>
+    <published>2020-02-24T09:38:06.000Z</published>
+    <updated>2020-02-24T09:39:47.407Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Linux入门&quot;&gt;&lt;a href=&quot;#Linux入门&quot; class=&quot;headerlink&quot; title=&quot;Linux入门&quot;&gt;&lt;/a&gt;Linux入门&lt;/h3&gt;&lt;h4 id=&quot;入门命令&quot;&gt;&lt;a href=&quot;#入门命令&quot; class=&quot;headerlink&quot; title=&quot;入门命令&quot;&gt;&lt;/a&gt;入门命令&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;su - root：&lt;/strong&gt;进入管理员账户，密码输入不显示！因为安全机制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;halt：&lt;/strong&gt;关机命令，必须在root命令下&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pwd：&lt;/strong&gt;查看当前目录&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;exit：&lt;/strong&gt;退出当前账户&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-操作系统" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JDBC</title>
+    <link href="http://yoursite.com/2020/02/24/JDBC/"/>
+    <id>http://yoursite.com/2020/02/24/JDBC/</id>
+    <published>2020-02-24T09:36:56.000Z</published>
+    <updated>2020-02-24T09:37:34.239Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;JDBC编程&quot;&gt;&lt;a href=&quot;#JDBC编程&quot; class=&quot;headerlink&quot; title=&quot;JDBC编程&quot;&gt;&lt;/a&gt;JDBC编程&lt;/h1&gt;&lt;h4 id=&quot;学前反思&quot;&gt;&lt;a href=&quot;#学前反思&quot; class=&quot;headerlink&quot; title=&quot;学前反思&quot;&gt;&lt;/a&gt;学前反思&lt;/h4&gt;&lt;p&gt;马上进入大三了，对数据库的了解竟然是知之甚少。由于学校大二没有开数据库这门课，所以自己也没有看，开学又要面对数据库的等级考试，让人不觉后背一凉。学习jdbc编程可以轻松的使用java对数据库进行操作。但是反思自己的一次一次的踩坑，明明是一个很少的知识点，自己却学了两个月之久，每次都学一点就不想学了，过了很久又都忘了，这次必须在一天内看完。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaWeb</title>
+    <link href="http://yoursite.com/2020/02/24/JavaWeb/"/>
+    <id>http://yoursite.com/2020/02/24/JavaWeb/</id>
+    <published>2020-02-24T09:35:49.000Z</published>
+    <updated>2020-02-24T09:36:20.452Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Javaweb&quot;&gt;&lt;a href=&quot;#Javaweb&quot; class=&quot;headerlink&quot; title=&quot;Javaweb&quot;&gt;&lt;/a&gt;Javaweb&lt;/h1&gt;&lt;h4 id=&quot;网页常见状态吗&quot;&gt;&lt;a href=&quot;#网页常见状态吗&quot; class=&quot;headerlink&quot; title=&quot;网页常见状态吗&quot;&gt;&lt;/a&gt;网页常见状态吗&lt;/h4&gt;&lt;p&gt;200：一切正常&lt;/p&gt;
+&lt;p&gt;300/301：页面重定向 （跳转）&lt;/p&gt;
+&lt;p&gt;404：资源不存在&lt;/p&gt;
+&lt;p&gt;403：权限不足 （如访问a目录，但是没有a目录设置不可见）&lt;/p&gt;
+&lt;p&gt;500：服务其内部错误（代码有误）&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot</title>
@@ -33,26 +116,6 @@
     
     
       <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDBC编程笔记</title>
-    <link href="http://yoursite.com/2019/08/04/JDBC/"/>
-    <id>http://yoursite.com/2019/08/04/JDBC/</id>
-    <published>2019-08-04T03:18:39.510Z</published>
-    <updated>2020-02-24T09:20:18.271Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;JDBC编程&quot;&gt;&lt;a href=&quot;#JDBC编程&quot; class=&quot;headerlink&quot; title=&quot;JDBC编程&quot;&gt;&lt;/a&gt;JDBC编程&lt;/h1&gt;&lt;h4 id=&quot;学前反思&quot;&gt;&lt;a href=&quot;#学前反思&quot; class=&quot;headerlink&quot; title=&quot;学前反思&quot;&gt;&lt;/a&gt;学前反思&lt;/h4&gt;&lt;p&gt;马上进入大三了，对数据库的了解竟然是知之甚少。由于学校大二没有开数据库这门课，所以自己也没有看，开学又要面对数据库的等级考试，让人不觉后背一凉。学习jdbc编程可以轻松的使用java对数据库进行操作。但是反思自己的一次一次的踩坑，明明是一个很少的知识点，自己却学了两个月之久，每次都学一点就不想学了，过了很久又都忘了，这次必须在一天内看完。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="编程美学" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E7%BE%8E%E5%AD%A6/"/>
-    
-    
-      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
     
   </entry>
   
