@@ -123,7 +123,8 @@
 <meta property="og:description" content="Linux入门入门命令su - root：进入管理员账户，密码输入不显示！因为安全机制。 halt：关机命令，必须在root命令下 pwd：查看当前目录 exit：退出当前账户">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/img/%E5%BC%80%E5%90%AFftp.png">
-<meta property="og:updated_time" content="2020-02-26T04:01:42.832Z">
+<meta property="og:image" content="http://c.biancheng.net/uploads/allimg/181008/2-1Q00Q41T01J.jpg">
+<meta property="og:updated_time" content="2020-03-02T08:29:38.629Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="Linux入门入门命令su - root：进入管理员账户，密码输入不显示！因为安全机制。 halt：关机命令，必须在root命令下 pwd：查看当前目录 exit：退出当前账户">
@@ -446,6 +447,46 @@
 <p><strong>有关防火墙其他常用命令：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --state                          ##查看防火墙状态，是否是running</span><br><span class="line">firewall-cmd --reload                          ##重新载入配置，比如添加规则之后，需要执行此命令</span><br><span class="line">firewall-cmd --get-zones                      ##列出支持的zone</span><br><span class="line">firewall-cmd --get-services                    ##列出支持的服务，在列表中的服务是放行的</span><br><span class="line">firewall-cmd --query-service ftp              ##查看ftp服务是否支持，返回yes或者no</span><br><span class="line">firewall-cmd --add-service=ftp                ##临时开放ftp服务</span><br><span class="line">firewall-cmd --add-service=ftp --permanent    ##永久开放ftp服务</span><br><span class="line">firewall-cmd --remove-service=ftp --permanent  ##永久移除ftp服务</span><br><span class="line">firewall-cmd --add-port=80/tcp --permanent    ##永久添加80端口</span><br><span class="line">iptables -L -n                                ##查看规则，这个命令是和iptables的相同的</span><br><span class="line">man firewall-cmd                              ##查看帮助</span><br></pre></td></tr></table></figure>
 
+<h4 id="X-window"><a href="#X-window" class="headerlink" title="X window"></a>X window</h4><h5 id="Linux的init命令"><a href="#Linux的init命令" class="headerlink" title="Linux的init命令"></a>Linux的init命令</h5><p>一、init是Linux系统操作中不可缺少的程序之一。<br>　　所谓的init进程，它是一个由内核启动的用户级进程。<br>　　内核自行启动（已经被载入内存，开始运行，并已初始化所有的设备驱动程序和数据结构等）之后，就通过启动一个用户级程序init的方式，完成引导进程。所以,init始终是第一个进程（其进程编号始终为1）。<br>　　内核会在过去曾使用过init的几个地方查找它，它的正确位置（对Linux系统来说）是/sbin/init。如果内核找不到init，它就会试着运行/bin/sh，如果运行失败，系统的启动也会失败。</p>
+<p>二、init一共分为7个级别，这7个级别的所代表的含义如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#init 0 - 停机（千万不能把initdefault 设置为0 ）</span><br><span class="line"></span><br><span class="line">#init 1 - 单用户模式，只root用户进行维护</span><br><span class="line"></span><br><span class="line">#init 2 - 多用户，不能使用NFS(Net File System) 不联网</span><br><span class="line"></span><br><span class="line">#init 3 - 完全多用户模式(标准的运行级)</span><br><span class="line"></span><br><span class="line">#init 4 - 安全模式</span><br><span class="line"></span><br><span class="line">#init 5 - X11 （xwindow) 图形化界面模式</span><br><span class="line"></span><br><span class="line">#init 6 - 重新启动 （千万不要把initdefault 设置为</span><br></pre></td></tr></table></figure>
+
+<p>默认为xwindow模式启动，可以通过修改/ect/inittab的配置信息修改默认启动模式</p>
+<p>也可以在字符操作界面使用vim inittab修改</p>
+<h5 id="Vim编辑器"><a href="#Vim编辑器" class="headerlink" title="Vim编辑器"></a>Vim编辑器</h5><p>ctrl + b 向上移动一页命令</p>
+<p>ctrl + f  向下移动一也命令</p>
+<p><strong>vi和vim 常用的三种模式：</strong></p>
+<p>　1，正常模式</p>
+<p>　　在这种模式下，可以使用【上下左右】按键来移动光标，也可使用【删除字符】【删除整行】来处理档案内容，也可使用【复制、粘贴】来处理文件数据。</p>
+<p>　 2，插入模式/编辑模式</p>
+<p>　　按下 i，I，o，O，a，A，r，R等任一一个字母之后就会进入到编辑模式，一般来说按 i 即可。　　　　</p>
+<p>　3，命令行模式</p>
+<p>　　在这种模式下，可以提供相关指令，完成读取、存盘、替换、离开vim、显示行号等动作。</p>
+<p><strong>下图为vi和vim模式的相互切换：</strong></p>
+<p><img src="http://c.biancheng.net/uploads/allimg/181008/2-1Q00Q41T01J.jpg" alt></p>
+<p>三种模式中常用得快捷键(【快捷键】)：</p>
+<p>　　1，拷贝当前行 【yy】,拷贝当前行向下3行【3yy】,粘贴【p】，在一般模式下可操作；</p>
+<p>　　2，删除当前行【dd】,删除当前行向下3行【3dd】；</p>
+<p>　　3，在文件中查找某个关键字【命令行模式下，/关键字，回车查找，输入n查找下一个】；</p>
+<p>　　4，设置文件的行号【:set nu】，取消文件行号【:set nonu】,都在命令模下可操作；</p>
+<p>　　5，光标快速定位到文档最末行【G】，定位到首行【gg】,都在一般模式下操作；</p>
+<p>　　6，撤销本次输入【u】,在一般模式下操作；</p>
+<p>　　7，移动光标到指定行【shift+g】:</p>
+<p>　　　　第一步：显示行号【:set nu】,命令模式下</p>
+<p>　　　　第二部：输入行号</p>
+<p>　　　　第三部：输入shift+g</p>
+<p> 　　8，光标快速移动到行尾、行首</p>
+<p>　　　　1），在一般模式下：</p>
+<p>　　　　　光标移动到行尾：【$】 ；光标移动到行首：【^】。</p>
+<p>　　　　2），在命令模式下：</p>
+<p>　　　　　光标移动到行尾:【end】；光标移动到行首：【home】。</p>
+<p>​        9,%s /要替换文本/替换文本/g(表示扫描全文)c(询问是否替换)。</p>
+<p>​        10，！wc    文件名——可以查看文本字数和行数</p>
+<p> 温馨提示：</p>
+<p>　　有时使用vim编辑某个文件时，提示.xxx.sh.swp文件已存在，是因为异常退出后，linux会生成一个swp文件，无论选择什么，下次进入还是会提示</p>
+<p>　　使用ls命令无法查看到。</p>
+<p>　　解决方法：使用rm -rf .xxx.sh.swp ,删除文件即可。</p>
+<p>版权声明：本文版权归作者所有，欢迎转载，但请注明出处。</p>
 
       
     </div>
@@ -669,7 +710,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux入门"><span class="nav-number">1.</span> <span class="nav-text">Linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#入门命令"><span class="nav-number">1.1.</span> <span class="nav-text">入门命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用软件的安装"><span class="nav-number">1.2.</span> <span class="nav-text">应用软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用rpm工具安装应用软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用rpm工具安装应用软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ftp，实现文件传输"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装ftp，实现文件传输</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux入门"><span class="nav-number">1.</span> <span class="nav-text">Linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#入门命令"><span class="nav-number">1.1.</span> <span class="nav-text">入门命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用软件的安装"><span class="nav-number">1.2.</span> <span class="nav-text">应用软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用rpm工具安装应用软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用rpm工具安装应用软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ftp，实现文件传输"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装ftp，实现文件传输</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#X-window"><span class="nav-number">1.3.</span> <span class="nav-text">X window</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux的init命令"><span class="nav-number">1.3.1.</span> <span class="nav-text">Linux的init命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Vim编辑器"><span class="nav-number">1.3.2.</span> <span class="nav-text">Vim编辑器</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
