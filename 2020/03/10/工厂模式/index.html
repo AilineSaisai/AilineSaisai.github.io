@@ -114,18 +114,18 @@
 
 
 
-<meta name="description" content="工厂模式利用工厂模式，降低程序的耦合度。 首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 全限定类名。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。 好处：以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的实例声明。 配置文件： properties文件类型 key =">
+<meta name="description" content="工厂模式利用工厂模式，降低程序的耦合度。 首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 全限定类名。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。 好处：以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的实例声明。">
 <meta name="keywords" content="-星星之火">
 <meta property="og:type" content="article">
 <meta property="og:title" content="工厂模式">
 <meta property="og:url" content="http://yoursite.com/2020/03/10/工厂模式/index.html">
 <meta property="og:site_name" content="Ailine">
-<meta property="og:description" content="工厂模式利用工厂模式，降低程序的耦合度。 首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 全限定类名。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。 好处：以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的实例声明。 配置文件： properties文件类型 key =">
+<meta property="og:description" content="工厂模式利用工厂模式，降低程序的耦合度。 首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 全限定类名。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。 好处：以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的实例声明。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-10T11:11:30.275Z">
+<meta property="og:updated_time" content="2020-03-22T09:20:11.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工厂模式">
-<meta name="twitter:description" content="工厂模式利用工厂模式，降低程序的耦合度。 首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 全限定类名。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。 好处：以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的实例声明。 配置文件： properties文件类型 key =">
+<meta name="twitter:description" content="工厂模式利用工厂模式，降低程序的耦合度。 首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 全限定类名。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。 好处：以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的实例声明。">
 
 
 
@@ -373,6 +373,8 @@
         <h3 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h3><p>利用工厂模式，降低程序的耦合度。</p>
 <p>首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 <strong>全限定类名</strong>。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。</p>
 <p><strong>好处：</strong>以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的<strong>实例声明</strong>。</p>
+<a id="more"></a>
+
 <p>配置文件：</p>
 <p>properties文件类型 key = value（全限定类名）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">accountService=com.ailine.service.implement.AccountServiceImp</span><br><span class="line">accountDao=com.ailine.dao.implement.AccountDaoImp</span><br></pre></td></tr></table></figure>
@@ -526,7 +528,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -548,7 +550,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

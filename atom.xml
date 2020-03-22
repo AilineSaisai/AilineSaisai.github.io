@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-13T10:44:15.470Z</updated>
+  <updated>2020-03-22T09:18:27.701Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,120 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Thymeleaf</title>
+    <link href="http://yoursite.com/2020/03/22/Thymeleaf/"/>
+    <id>http://yoursite.com/2020/03/22/Thymeleaf/</id>
+    <published>2020-03-22T09:15:05.000Z</published>
+    <updated>2020-03-22T09:18:27.701Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;标准表达式语法&quot;&gt;&lt;a href=&quot;#标准表达式语法&quot; class=&quot;headerlink&quot; title=&quot;标准表达式语法&quot;&gt;&lt;/a&gt;标准表达式语法&lt;/h2&gt;&lt;p&gt;它们分为四类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.变量表达式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2.选择或星号表达式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;3.文字国际化表达式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;4.URL表达式&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓shape标签</title>
+    <link href="http://yoursite.com/2020/03/22/%E5%AE%89%E5%8D%93shape%E6%A0%87%E7%AD%BE/"/>
+    <id>http://yoursite.com/2020/03/22/安卓shape标签/</id>
+    <published>2020-03-22T02:54:10.000Z</published>
+    <updated>2020-03-22T09:20:22.284Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在res/drawable下新建一个xml文件；&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-移动端" scheme="http://yoursite.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓事件</title>
+    <link href="http://yoursite.com/2020/03/22/%E5%AE%89%E5%8D%93%E4%BA%8B%E4%BB%B6/"/>
+    <id>http://yoursite.com/2020/03/22/安卓事件/</id>
+    <published>2020-03-22T02:41:30.000Z</published>
+    <updated>2020-03-22T09:20:29.659Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;安卓开发问题&quot;&gt;&lt;a href=&quot;#安卓开发问题&quot; class=&quot;headerlink&quot; title=&quot;安卓开发问题&quot;&gt;&lt;/a&gt;安卓开发问题&lt;/h3&gt;&lt;h4 id=&quot;基本监听事件&quot;&gt;&lt;a href=&quot;#基本监听事件&quot; class=&quot;headerlink&quot; title=&quot;基本监听事件&quot;&gt;&lt;/a&gt;基本监听事件&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;声明控件&lt;/li&gt;
+&lt;li&gt;通过findViewById()找到对应的控件&lt;/li&gt;
+&lt;li&gt;设置事件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;当设置点击事件时，调用了&lt;code&gt;setOnClickListener( OnClickListener o)&lt;/code&gt;方法，需要一个OnClickListener接口的实例，采用匿名内部类的方式。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-移动端" scheme="http://yoursite.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2020/03/21/%E8%B7%AF%E5%BE%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2020/03/21/路径区别/</id>
+    <published>2020-03-21T13:28:45.120Z</published>
+    <updated>2020-03-22T09:20:05.372Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;/   网站根路径 &lt;/p&gt;
+&lt;p&gt;./  当前路径&lt;/p&gt;
+&lt;p&gt;../ 上一级路径&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Controller注解</title>
+    <link href="http://yoursite.com/2020/03/21/Controller%E6%B3%A8%E8%A7%A3/"/>
+    <id>http://yoursite.com/2020/03/21/Controller注解/</id>
+    <published>2020-03-21T13:02:09.000Z</published>
+    <updated>2020-03-22T09:19:58.586Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Controller和RestController&quot;&gt;&lt;a href=&quot;#Controller和RestController&quot; class=&quot;headerlink&quot; title=&quot;Controller和RestController&quot;&gt;&lt;/a&gt;Controller和RestController&lt;/h3&gt;&lt;p&gt;当使用&lt;strong&gt;Controller&lt;/strong&gt;注解时一个类时，web会根据类中方法的&lt;strong&gt;返回值+.html&lt;/strong&gt;去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的&lt;strong&gt;RequestMapping&lt;/strong&gt;注解所标识路径&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>DBUtil</title>
     <link href="http://yoursite.com/2020/03/13/DBUtil/"/>
     <id>http://yoursite.com/2020/03/13/DBUtil/</id>
     <published>2020-03-13T10:35:11.000Z</published>
-    <updated>2020-03-13T10:44:15.470Z</updated>
+    <updated>2020-03-22T09:19:47.390Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;DbUtils简介&quot;&gt;&lt;a href=&quot;#DbUtils简介&quot; class=&quot;headerlink&quot; title=&quot;DbUtils简介&quot;&gt;&lt;/a&gt;DbUtils简介&lt;/h3&gt;&lt;p&gt;根据官网的介绍，DbUtils是一种 &lt;strong&gt;JDBC Utility
-        
-      
+      &lt;h3 id=&quot;DbUtils简介&quot;&gt;&lt;a href=&quot;#DbUtils简介&quot; class=&quot;headerlink&quot; title=&quot;DbUtils简介&quot;&gt;&lt;/a&gt;DbUtils简介&lt;/h3&gt;&lt;p&gt;根据官网的介绍，DbUtils是一种 &lt;strong&gt;JDBC Utility Component&lt;/strong&gt; （翻译过来大概就是：JDBC实用部件），故名思意，和数据库操作有关&lt;/p&gt;
+&lt;p&gt;官网上的简介也称之为 &lt;strong&gt;JDBC helper library&lt;/strong&gt; ，由此可知，DbUtils是一个工具类库，用来进行数据库通信的&lt;/p&gt;
     
     </summary>
     
@@ -45,18 +144,12 @@
     <link href="http://yoursite.com/2020/03/12/spring%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
     <id>http://yoursite.com/2020/03/12/spring基本注解/</id>
     <published>2020-03-12T14:53:33.000Z</published>
-    <updated>2020-03-13T12:43:06.800Z</updated>
+    <updated>2020-03-22T09:18:36.544Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;注解创建对象&quot;&gt;&lt;a href=&quot;#注解创建对象&quot; class=&quot;headerlink&quot; title=&quot;注解创建对象&quot;&gt;&lt;/a&gt;注解创建对象&lt;/h2&gt;&lt;p&gt;（四者功能相同）&lt;/p&gt;
-&lt;h3 id=&quot;Component&quot;&gt;&lt;a href=&quot;#Component&quot;
-        
-      
+      &lt;h2 id=&quot;注解创建对象&quot;&gt;&lt;a href=&quot;#注解创建对象&quot; class=&quot;headerlink&quot; title=&quot;注解创建对象&quot;&gt;&lt;/a&gt;注解创建对象&lt;/h2&gt;&lt;p&gt;（四者功能相同）&lt;/p&gt;
+&lt;h3 id=&quot;Component&quot;&gt;&lt;a href=&quot;#Component&quot; class=&quot;headerlink&quot; title=&quot;Component&quot;&gt;&lt;/a&gt;Component&lt;/h3&gt;&lt;h4 id=&quot;Controller：一般用在表现层&quot;&gt;&lt;a href=&quot;#Controller：一般用在表现层&quot; class=&quot;headerlink&quot; title=&quot;Controller：一般用在表现层&quot;&gt;&lt;/a&gt;Controller：一般用在表现层&lt;/h4&gt;&lt;h4 id=&quot;Service：一般用在业务层&quot;&gt;&lt;a href=&quot;#Service：一般用在业务层&quot; class=&quot;headerlink&quot; title=&quot;Service：一般用在业务层&quot;&gt;&lt;/a&gt;Service：一般用在业务层&lt;/h4&gt;&lt;h4 id=&quot;Repository：一般用在持久层&quot;&gt;&lt;a href=&quot;#Repository：一般用在持久层&quot; class=&quot;headerlink&quot; title=&quot;Repository：一般用在持久层&quot;&gt;&lt;/a&gt;Repository：一般用在持久层&lt;/h4&gt;
     
     </summary>
     
@@ -70,17 +163,13 @@
     <link href="http://yoursite.com/2020/03/10/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
     <id>http://yoursite.com/2020/03/10/工厂模式/</id>
     <published>2020-03-10T10:55:31.000Z</published>
-    <updated>2020-03-10T11:11:30.275Z</updated>
+    <updated>2020-03-22T09:20:11.155Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot; title=&quot;工厂模式&quot;&gt;&lt;/a&gt;工厂模式&lt;/h3&gt;&lt;p&gt;利用工厂模式，降低程序的耦合度。&lt;/p&gt;
+&lt;p&gt;首先需要配置文件，通过读取配置文件中的内容来获取需要重复使用类（bean）的 &lt;strong&gt;全限定类名&lt;/strong&gt;。然后建立工厂，使用工厂代理创建对象，避免使用了new关键字创建对象。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;好处：&lt;/strong&gt;以后更改对象是，只需修改配置文件即可。例如，当某个需要多次使用的类的类名发生了变化，如果不适用工厂模式，我们需要手动修改所有的&lt;strong&gt;实例声明&lt;/strong&gt;。&lt;/p&gt;
     
     </summary>
     
@@ -134,17 +223,14 @@
     <link href="http://yoursite.com/2020/02/24/Linux/"/>
     <id>http://yoursite.com/2020/02/24/Linux/</id>
     <published>2020-02-24T09:38:06.000Z</published>
-    <updated>2020-03-16T08:20:58.340Z</updated>
+    <updated>2020-03-22T09:18:53.306Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;Linux入门&quot;&gt;&lt;a href=&quot;#Linux入门&quot; class=&quot;headerlink&quot; title=&quot;Linux入门&quot;&gt;&lt;/a&gt;Linux入门&lt;/h3&gt;&lt;h4 id=&quot;入门命令&quot;&gt;&lt;a href=&quot;#入门命令&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;Linux入门&quot;&gt;&lt;a href=&quot;#Linux入门&quot; class=&quot;headerlink&quot; title=&quot;Linux入门&quot;&gt;&lt;/a&gt;Linux入门&lt;/h3&gt;&lt;h4 id=&quot;入门命令&quot;&gt;&lt;a href=&quot;#入门命令&quot; class=&quot;headerlink&quot; title=&quot;入门命令&quot;&gt;&lt;/a&gt;入门命令&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;su - root：&lt;/strong&gt;进入管理员账户，密码输入不显示！因为安全机制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;halt：&lt;/strong&gt;关机命令，必须在root命令下&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pwd：&lt;/strong&gt;查看当前目录&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;exit：&lt;/strong&gt;退出当前账户&lt;/p&gt;
     
     </summary>
     
@@ -272,7 +358,7 @@
     <link href="http://yoursite.com/2019/07/16/JavaScript%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2019/07/16/JavaScript笔记/</id>
     <published>2019-07-16T10:33:37.811Z</published>
-    <updated>2019-11-26T09:03:38.900Z</updated>
+    <updated>2020-03-22T09:19:41.073Z</updated>
     
     <summary type="html">
     

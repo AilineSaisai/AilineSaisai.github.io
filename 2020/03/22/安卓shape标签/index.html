@@ -96,7 +96,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="-入坑系列,">
+  <meta name="keywords" content="-移动端,">
 
 
 
@@ -114,18 +114,18 @@
 
 
 
-<meta name="description" content="Javaweb网页常见状态吗200：一切正常 300/301：页面重定向 （跳转） 404：资源不存在 403：权限不足 （如访问a目录，但是没有a目录设置不可见） 500：服务其内部错误（代码有误）">
-<meta name="keywords" content="-入坑系列">
+<meta name="description" content="在res/drawable下新建一个xml文件；">
+<meta name="keywords" content="-移动端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaWeb">
-<meta property="og:url" content="http://yoursite.com/2020/02/24/JavaWeb/index.html">
+<meta property="og:title" content="安卓shape标签">
+<meta property="og:url" content="http://yoursite.com/2020/03/22/安卓shape标签/index.html">
 <meta property="og:site_name" content="Ailine">
-<meta property="og:description" content="Javaweb网页常见状态吗200：一切正常 300/301：页面重定向 （跳转） 404：资源不存在 403：权限不足 （如访问a目录，但是没有a目录设置不可见） 500：服务其内部错误（代码有误）">
+<meta property="og:description" content="在res/drawable下新建一个xml文件；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-24T09:36:20.452Z">
+<meta property="og:updated_time" content="2020-03-22T09:20:22.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaWeb">
-<meta name="twitter:description" content="Javaweb网页常见状态吗200：一切正常 300/301：页面重定向 （跳转） 404：资源不存在 403：权限不足 （如访问a目录，但是没有a目录设置不可见） 500：服务其内部错误（代码有误）">
+<meta name="twitter:title" content="安卓shape标签">
+<meta name="twitter:description" content="在res/drawable下新建一个xml文件；">
 
 
 
@@ -154,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/24/JavaWeb/">
+  <link rel="canonical" href="http://yoursite.com/2020/03/22/安卓shape标签/">
 
 
 
 
 
-  <title>JavaWeb | Ailine</title>
+  <title>安卓shape标签 | Ailine</title>
   
 
 
@@ -303,7 +303,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/24/JavaWeb/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/22/安卓shape标签/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ailine_赛赛">
@@ -320,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaWeb</h1>
+          <h1 class="post-title" itemprop="name headline">安卓shape标签</h1>
         
 
         <div class="post-meta">
@@ -332,8 +332,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T17:35:49+08:00">
-                2020-02-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-22T10:54:10+08:00">
+                2020-03-22
               </time>
             
 
@@ -370,43 +370,14 @@
       
 
       
-        <h1 id="Javaweb"><a href="#Javaweb" class="headerlink" title="Javaweb"></a>Javaweb</h1><h4 id="网页常见状态吗"><a href="#网页常见状态吗" class="headerlink" title="网页常见状态吗"></a>网页常见状态吗</h4><p>200：一切正常</p>
-<p>300/301：页面重定向 （跳转）</p>
-<p>404：资源不存在</p>
-<p>403：权限不足 （如访问a目录，但是没有a目录设置不可见）</p>
-<p>500：服务其内部错误（代码有误）</p>
+        <ol>
+<li><p>在res/drawable下新建一个xml文件；</p>
 <a id="more"></a>
-
-<h5 id="更改虚拟路径"><a href="#更改虚拟路径" class="headerlink" title="更改虚拟路径"></a>更改虚拟路径</h5><p>方式一：</p>
-<p>将web项目配置到webapps以外的目录，在conf/server.xml文件中，Host下添加</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">docBase</span>=<span class="string">"项目实际路径"</span> <span class="attr">path</span>=<span class="string">"相对路径"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>docBase中写的是实际路径</p>
-<p>path中写的是相对路径，相对于webapps的路径。</p>
-<p>方式二：</p>
-<p>E:\GameDownload\Java\tomcat8\conf\Catalina\localhost</p>
-<p>在此路径中新建 “项目名.xml”中新增一行</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">docBase</span>=<span class="string">"	"</span> <span class="attr">path</span>=<span class="string">" "</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="使用Eclipse开发Web项目（JSP项目）"><a href="#使用Eclipse开发Web项目（JSP项目）" class="headerlink" title="使用Eclipse开发Web项目（JSP项目）"></a>使用Eclipse开发Web项目（JSP项目）</h4><p>eclipse中创建的web项目浏览器可以直接访问webcontent中的文件，但是WEB-INF中的文件</p>
-<p>无法通过客户端（浏览器）直接访问，只能通过请求转发访问。</p>
-<p><strong>PS：并不是任何的内部跳转都能访问WEB-INF 因为跳转有两种方式（请求转发和重定向）</strong></p>
-<h5 id="统一字符集编码"><a href="#统一字符集编码" class="headerlink" title="统一字符集编码"></a>统一字符集编码</h5><p>1.编码分类</p>
-<p>设置jsp文件的编码（jsp文件中的pageEncoding属性）：jsp——&gt;java</p>
-<p>设置浏览器读取jsp文件的编码（jsp文件中的content属性）</p>
-<p>一般将上述设置成一样，推荐使用utf-8</p>
-<h5 id="JSP页面元素"><a href="#JSP页面元素" class="headerlink" title="JSP页面元素"></a>JSP页面元素</h5><h6 id="脚本Scriptlet"><a href="#脚本Scriptlet" class="headerlink" title="脚本Scriptlet"></a>脚本Scriptlet</h6><ol>
-<li><p>&lt;%</p>
-<pre><code>局部变量、Java语句</code></pre><p>  %&gt;</p>
 </li>
-<li><p>&lt;%！</p>
-<pre><code>全局变量、定义方法</code></pre><p>   %&gt;</p>
-</li>
-<li><p>&lt;%=</p>
-<pre><code>输出表达式 </code></pre><p>   %&gt;</p>
+<li><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">shape</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shape</span>=<span class="string">"rectangle"</span> | "<span class="attr">oval</span>" | "<span class="attr">line</span>" | "<span class="attr">ring</span>" //共有<span class="attr">4</span>种类型，矩形（默认）/椭圆形/直线形/环形</span></span><br><span class="line"><span class="tag">    // 以下<span class="attr">4</span>个属性只有当类型为环形时才有效</span></span><br><span class="line"><span class="tag">    <span class="attr">android:innerRadius</span>=<span class="string">"dimension"</span>     //内环半径</span></span><br><span class="line"><span class="tag">    <span class="attr">android:innerRadiusRatio</span>=<span class="string">"float"</span>    //内环半径相对于环的宽度的比例，比如环的宽度为<span class="attr">50</span>,比例为<span class="attr">2.5</span>,那么内环半径为<span class="attr">20</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:thickness</span>=<span class="string">"dimension"</span>   //环的厚度</span></span><br><span class="line"><span class="tag">    <span class="attr">android:thicknessRatio</span>=<span class="string">"float"</span>     //环的厚度相对于环的宽度的比例</span></span><br><span class="line"><span class="tag">    <span class="attr">android:useLevel</span>=<span class="string">"boolean"</span>&gt;</span>    //如果当做是LevelListDrawable使用时值为true，否则为false.</span><br><span class="line">    &gt;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">corners</span>    //定义圆角</span></span><br><span class="line"><span class="tag">    <span class="attr">android:radius</span>=<span class="string">"dimension"</span>      //全部的圆角半径</span></span><br><span class="line"><span class="tag">    <span class="attr">android:topLeftRadius</span>=<span class="string">"dimension"</span>   //左上角的圆角半径</span></span><br><span class="line"><span class="tag">    <span class="attr">android:topRightRadius</span>=<span class="string">"dimension"</span>  //右上角的圆角半径</span></span><br><span class="line"><span class="tag">    <span class="attr">android:bottomLeftRadius</span>=<span class="string">"dimension"</span>    //左下角的圆角半径</span></span><br><span class="line"><span class="tag">    <span class="attr">android:bottomRightRadius</span>=<span class="string">"dimension"</span> /&gt;</span>    //右下角的圆角半径</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">gradient</span>   //定义渐变效果</span></span><br><span class="line"><span class="tag">    <span class="attr">android:type</span>=<span class="string">[</span>"<span class="attr">linear</span>" | "<span class="attr">radial</span>" | "<span class="attr">sweep</span>"]    //共有<span class="attr">3</span>中渐变类型，线性渐变（默认）/放射渐变/扫描式渐变</span></span><br><span class="line"><span class="tag">    <span class="attr">android:angle</span>=<span class="string">"integer"</span>     //渐变角度，必须为<span class="attr">45</span>的倍数，<span class="attr">0</span>为从左到右，<span class="attr">90</span>为从上到下</span></span><br><span class="line"><span class="tag">    <span class="attr">android:centerX</span>=<span class="string">"float"</span>     //渐变中心<span class="attr">X</span>的相当位置，范围为<span class="attr">0</span>～<span class="attr">1</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:centerY</span>=<span class="string">"float"</span>     //渐变中心<span class="attr">Y</span>的相当位置，范围为<span class="attr">0</span>～<span class="attr">1</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:startColor</span>=<span class="string">"color"</span>      //渐变开始点的颜色</span></span><br><span class="line"><span class="tag">    <span class="attr">android:centerColor</span>=<span class="string">"color"</span>     //渐变中间点的颜色，在开始与结束点之间</span></span><br><span class="line"><span class="tag">    <span class="attr">android:endColor</span>=<span class="string">"color"</span>    //渐变结束点的颜色</span></span><br><span class="line"><span class="tag">    <span class="attr">android:gradientRadius</span>=<span class="string">"float"</span>  //渐变的半径，只有当渐变类型为<span class="attr">radial</span>时才能使用</span></span><br><span class="line"><span class="tag">    <span class="attr">android:useLevel</span>=<span class="string">[</span>"<span class="attr">true</span>" | "<span class="attr">false</span>"] /&gt;</span>  //使用LevelListDrawable时就要设置为true。设为false时才有渐变效果</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">padding</span>    //内部边距</span></span><br><span class="line"><span class="tag">    <span class="attr">android:left</span>=<span class="string">"dimension"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:top</span>=<span class="string">"dimension"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:right</span>=<span class="string">"dimension"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:bottom</span>=<span class="string">"dimension"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">size</span>   //自定义的图形大小</span></span><br><span class="line"><span class="tag">    <span class="attr">android:width</span>=<span class="string">"dimension"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:height</span>=<span class="string">"dimension"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">solid</span>  //内部填充颜色</span></span><br><span class="line"><span class="tag">    <span class="attr">android:color</span>=<span class="string">"color"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">stroke</span>     //描边</span></span><br><span class="line"><span class="tag">    <span class="attr">android:width</span>=<span class="string">"dimension"</span>   //描边的宽度</span></span><br><span class="line"><span class="tag">    <span class="attr">android:color</span>=<span class="string">"color"</span>   //描边的颜色</span></span><br><span class="line"><span class="tag">    // 以下两个属性设置虚线</span></span><br><span class="line"><span class="tag">    <span class="attr">android:dashWidth</span>=<span class="string">"dimension"</span>   //虚线的宽度，值为<span class="attr">0</span>时是实线</span></span><br><span class="line"><span class="tag">    <span class="attr">android:dashGap</span>=<span class="string">"dimension"</span> /&gt;</span>      //虚线的间隔</span><br><span class="line">    <span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
-<p>一般而言，修复web.xml、配置文件、Java需要重启tomcat服务，但是如果修改JSP/html/css/js不需要重启</p>
 
       
     </div>
@@ -453,7 +424,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/入坑系列/" rel="tag"># -入坑系列</a>
+            <a href="/tags/移动端/" rel="tag"># -移动端</a>
           
         </div>
       
@@ -466,8 +437,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/09/springboot/" rel="next" title="SpringBoot">
-                <i class="fa fa-chevron-left"></i> SpringBoot
+              <a href="/2020/03/22/安卓事件/" rel="next" title="安卓事件">
+                <i class="fa fa-chevron-left"></i> 安卓事件
               </a>
             
           </div>
@@ -476,8 +447,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/24/JDBC/" rel="prev" title="JDBC">
-                JDBC <i class="fa fa-chevron-right"></i>
+              <a href="/2020/03/22/Thymeleaf/" rel="prev" title="Thymeleaf">
+                Thymeleaf <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -530,17 +501,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563691887957&di=c14a513f0e862cd0f1852998edc0a6a7&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F02%2F14%2F51%2F31576b7bf4a34ac.jpg" alt="Ailine_赛赛">
           <p class="site-author-name" itemprop="name">Ailine_赛赛</p>
@@ -620,22 +582,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Javaweb"><span class="nav-number">1.</span> <span class="nav-text">Javaweb</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网页常见状态吗"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">网页常见状态吗</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#更改虚拟路径"><span class="nav-number">1.0.0.1.1.</span> <span class="nav-text">更改虚拟路径</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用Eclipse开发Web项目（JSP项目）"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">使用Eclipse开发Web项目（JSP项目）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#统一字符集编码"><span class="nav-number">1.0.0.2.1.</span> <span class="nav-text">统一字符集编码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#JSP页面元素"><span class="nav-number">1.0.0.2.2.</span> <span class="nav-text">JSP页面元素</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#脚本Scriptlet"><span class="nav-number">1.0.0.2.2.1.</span> <span class="nav-text">脚本Scriptlet</span></a></li></ol></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
