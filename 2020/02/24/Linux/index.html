@@ -124,7 +124,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/img/%E5%BC%80%E5%90%AFftp.png">
 <meta property="og:image" content="http://c.biancheng.net/uploads/allimg/181008/2-1Q00Q41T01J.jpg">
-<meta property="og:updated_time" content="2020-03-22T09:18:53.306Z">
+<meta property="og:updated_time" content="2020-03-23T07:14:02.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="Linux入门入门命令su - root：进入管理员账户，密码输入不显示！因为安全机制。 halt：关机命令，必须在root命令下 pwd：查看当前目录 exit：退出当前账户">
@@ -480,13 +480,13 @@
 <p>　　　　　光标移动到行尾：【$】 ；光标移动到行首：【^】。</p>
 <p>　　　　2），在命令模式下：</p>
 <p>　　　　　光标移动到行尾:【end】；光标移动到行首：【home】。</p>
-<p>​        9,%s /要替换文本/替换文本/g(表示扫描全文)c(询问是否替换)。</p>
+<p>​        9,%s /要替换文本/替换文本/g(表示扫描全文)c(询问是否替换)或1,$ s/要替换文本/替换文本/gc。</p>
 <p>​        10，！wc    文件名——可以查看文本字数和行数</p>
-<p> 温馨提示：</p>
+<p> <strong>温馨提示：</strong></p>
 <p>　　有时使用vim编辑某个文件时，提示.xxx.sh.swp文件已存在，是因为异常退出后，linux会生成一个swp文件，无论选择什么，下次进入还是会提示</p>
 <p>　　使用ls命令无法查看到。</p>
 <p>　　解决方法：使用rm -rf .xxx.sh.swp ,删除文件即可。</p>
-<p>版权声明：本文版权归作者所有，欢迎转载，但请注明出处。</p>
+<h4 id="磁盘管理和磁盘分区"><a href="#磁盘管理和磁盘分区" class="headerlink" title="磁盘管理和磁盘分区"></a>磁盘管理和磁盘分区</h4><p>目前磁盘分区主要有MBR以及GPT两种格式，</p>
 
       
     </div>
@@ -710,7 +710,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux入门"><span class="nav-number">1.</span> <span class="nav-text">Linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#入门命令"><span class="nav-number">1.1.</span> <span class="nav-text">入门命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用软件的安装"><span class="nav-number">1.2.</span> <span class="nav-text">应用软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用rpm工具安装应用软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用rpm工具安装应用软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ftp，实现文件传输"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装ftp，实现文件传输</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#X-window"><span class="nav-number">1.3.</span> <span class="nav-text">X window</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux的init命令"><span class="nav-number">1.3.1.</span> <span class="nav-text">Linux的init命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Vim编辑器"><span class="nav-number">1.3.2.</span> <span class="nav-text">Vim编辑器</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux入门"><span class="nav-number">1.</span> <span class="nav-text">Linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#入门命令"><span class="nav-number">1.1.</span> <span class="nav-text">入门命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用软件的安装"><span class="nav-number">1.2.</span> <span class="nav-text">应用软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用rpm工具安装应用软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用rpm工具安装应用软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ftp，实现文件传输"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装ftp，实现文件传输</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#X-window"><span class="nav-number">1.3.</span> <span class="nav-text">X window</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux的init命令"><span class="nav-number">1.3.1.</span> <span class="nav-text">Linux的init命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Vim编辑器"><span class="nav-number">1.3.2.</span> <span class="nav-text">Vim编辑器</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁盘管理和磁盘分区"><span class="nav-number">1.4.</span> <span class="nav-text">磁盘管理和磁盘分区</span></a></li></ol></li></ol></div>
             
 
           </div>

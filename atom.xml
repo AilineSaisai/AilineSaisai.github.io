@@ -89,11 +89,11 @@
     <link href="http://yoursite.com/2020/03/21/%E8%B7%AF%E5%BE%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://yoursite.com/2020/03/21/路径区别/</id>
     <published>2020-03-21T13:28:45.120Z</published>
-    <updated>2020-03-22T09:20:05.372Z</updated>
+    <updated>2020-03-23T01:45:48.474Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;/   网站根路径 &lt;/p&gt;
+      &lt;p&gt;/ 网络根目录&lt;/p&gt;
 &lt;p&gt;./  当前路径&lt;/p&gt;
 &lt;p&gt;../ 上一级路径&lt;/p&gt;
     
@@ -223,7 +223,7 @@
     <link href="http://yoursite.com/2020/02/24/Linux/"/>
     <id>http://yoursite.com/2020/02/24/Linux/</id>
     <published>2020-02-24T09:38:06.000Z</published>
-    <updated>2020-03-22T09:18:53.306Z</updated>
+    <updated>2020-03-23T07:14:02.621Z</updated>
     
     <summary type="html">
     
@@ -284,7 +284,7 @@
     <link href="http://yoursite.com/2020/02/09/springboot/"/>
     <id>http://yoursite.com/2020/02/09/springboot/</id>
     <published>2020-02-09T12:06:09.522Z</published>
-    <updated>2020-02-23T13:12:23.884Z</updated>
+    <updated>2020-03-22T23:59:18.532Z</updated>
     
     <summary type="html">
     
