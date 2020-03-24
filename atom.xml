@@ -107,11 +107,11 @@
     <link href="http://yoursite.com/2020/03/21/Controller%E6%B3%A8%E8%A7%A3/"/>
     <id>http://yoursite.com/2020/03/21/Controller注解/</id>
     <published>2020-03-21T13:02:09.000Z</published>
-    <updated>2020-03-22T09:19:58.586Z</updated>
+    <updated>2020-03-24T14:20:05.186Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Controller和RestController&quot;&gt;&lt;a href=&quot;#Controller和RestController&quot; class=&quot;headerlink&quot; title=&quot;Controller和RestController&quot;&gt;&lt;/a&gt;Controller和RestController&lt;/h3&gt;&lt;p&gt;当使用&lt;strong&gt;Controller&lt;/strong&gt;注解时一个类时，web会根据类中方法的&lt;strong&gt;返回值+.html&lt;/strong&gt;去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的&lt;strong&gt;RequestMapping&lt;/strong&gt;注解所标识路径&lt;/p&gt;
+      &lt;h3 id=&quot;Controller和RestController&quot;&gt;&lt;a href=&quot;#Controller和RestController&quot; class=&quot;headerlink&quot; title=&quot;Controller和RestController&quot;&gt;&lt;/a&gt;Controller和RestController&lt;/h3&gt;&lt;p&gt;当使用&lt;strong&gt;Controller&lt;/strong&gt;注解时一个类时，web会根据类中方法的&lt;strong&gt;返回值+.html&lt;/strong&gt;去templates中找对应的模板资源&lt;strong&gt;（需要有thymeleaf模板引擎的支持）&lt;/strong&gt;，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的&lt;strong&gt;RequestMapping&lt;/strong&gt;注解所标识路径&lt;/p&gt;
     
     </summary>
     

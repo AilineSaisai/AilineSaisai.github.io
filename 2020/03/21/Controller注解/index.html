@@ -114,18 +114,18 @@
 
 
 
-<meta name="description" content="Controller和RestController当使用Controller注解时一个类时，web会根据类中方法的返回值+.html去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的RequestMapping注解所标识路径">
+<meta name="description" content="Controller和RestController当使用Controller注解时一个类时，web会根据类中方法的返回值+.html去templates中找对应的模板资源（需要有thymeleaf模板引擎的支持），如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的RequestMapping注解所标识路径">
 <meta name="keywords" content="-死亡框架">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Controller注解">
 <meta property="og:url" content="http://yoursite.com/2020/03/21/Controller注解/index.html">
 <meta property="og:site_name" content="Ailine">
-<meta property="og:description" content="Controller和RestController当使用Controller注解时一个类时，web会根据类中方法的返回值+.html去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的RequestMapping注解所标识路径">
+<meta property="og:description" content="Controller和RestController当使用Controller注解时一个类时，web会根据类中方法的返回值+.html去templates中找对应的模板资源（需要有thymeleaf模板引擎的支持），如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的RequestMapping注解所标识路径">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-22T09:19:58.586Z">
+<meta property="og:updated_time" content="2020-03-24T14:20:05.186Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Controller注解">
-<meta name="twitter:description" content="Controller和RestController当使用Controller注解时一个类时，web会根据类中方法的返回值+.html去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的RequestMapping注解所标识路径">
+<meta name="twitter:description" content="Controller和RestController当使用Controller注解时一个类时，web会根据类中方法的返回值+.html去templates中找对应的模板资源（需要有thymeleaf模板引擎的支持），如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的RequestMapping注解所标识路径">
 
 
 
@@ -370,13 +370,13 @@
       
 
       
-        <h3 id="Controller和RestController"><a href="#Controller和RestController" class="headerlink" title="Controller和RestController"></a>Controller和RestController</h3><p>当使用<strong>Controller</strong>注解时一个类时，web会根据类中方法的<strong>返回值+.html</strong>去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的<strong>RequestMapping</strong>注解所标识路径</p>
+        <h3 id="Controller和RestController"><a href="#Controller和RestController" class="headerlink" title="Controller和RestController"></a>Controller和RestController</h3><p>当使用<strong>Controller</strong>注解时一个类时，web会根据类中方法的<strong>返回值+.html</strong>去templates中找对应的模板资源<strong>（需要有thymeleaf模板引擎的支持）</strong>，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的<strong>RequestMapping</strong>注解所标识路径</p>
 <a id="more"></a>
 
 <p><strong>RestController注解</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>(&#123;ElementType.TYPE&#125;)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> RestController &#123;</span><br><span class="line">    <span class="meta">@AliasFor</span>(</span><br><span class="line">        annotation = Controller.class</span><br><span class="line">    )</span><br><span class="line">    <span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> ""</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>由源码看出，他是包含Controller的。但是他的作用是在页面显示方法的返回值，作为页面的响应。</p>
+<p>由源码看出，他是包含@Controller的。但是他的作用是在页面显示方法的返回值，作为页面的响应。因为有@ResponseBody注解的存在</p>
 <p>例如：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"testhello"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 

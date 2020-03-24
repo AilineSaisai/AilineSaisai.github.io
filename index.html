@@ -885,7 +885,7 @@
 
       
         
-          <h3 id="Controller和RestController"><a href="#Controller和RestController" class="headerlink" title="Controller和RestController"></a>Controller和RestController</h3><p>当使用<strong>Controller</strong>注解时一个类时，web会根据类中方法的<strong>返回值+.html</strong>去templates中找对应的模板资源，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的<strong>RequestMapping</strong>注解所标识路径</p>
+          <h3 id="Controller和RestController"><a href="#Controller和RestController" class="headerlink" title="Controller和RestController"></a>Controller和RestController</h3><p>当使用<strong>Controller</strong>注解时一个类时，web会根据类中方法的<strong>返回值+.html</strong>去templates中找对应的模板资源<strong>（需要有thymeleaf模板引擎的支持）</strong>，如果没找到，浏览器会返回500错误。找到后就会把模板引擎样式在页面上，访问路径是方法上的<strong>RequestMapping</strong>注解所标识路径</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2020/03/21/Controller注解/" rel="contents">
