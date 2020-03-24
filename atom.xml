@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-22T09:18:27.701Z</updated>
+  <updated>2020-03-24T13:21:30.849Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/03/22/Thymeleaf/"/>
     <id>http://yoursite.com/2020/03/22/Thymeleaf/</id>
     <published>2020-03-22T09:15:05.000Z</published>
-    <updated>2020-03-22T09:18:27.701Z</updated>
+    <updated>2020-03-24T13:21:30.849Z</updated>
     
     <summary type="html">
     
@@ -140,11 +140,11 @@
   </entry>
   
   <entry>
-    <title>spring基本注解</title>
+    <title>spring和springboot基本注解</title>
     <link href="http://yoursite.com/2020/03/12/spring%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
     <id>http://yoursite.com/2020/03/12/spring基本注解/</id>
     <published>2020-03-12T14:53:33.000Z</published>
-    <updated>2020-03-22T09:18:36.544Z</updated>
+    <updated>2020-03-23T13:50:45.970Z</updated>
     
     <summary type="html">
     
@@ -223,7 +223,7 @@
     <link href="http://yoursite.com/2020/02/24/Linux/"/>
     <id>http://yoursite.com/2020/02/24/Linux/</id>
     <published>2020-02-24T09:38:06.000Z</published>
-    <updated>2020-03-23T07:14:02.621Z</updated>
+    <updated>2020-03-23T09:25:23.602Z</updated>
     
     <summary type="html">
     

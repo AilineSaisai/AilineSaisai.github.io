@@ -124,7 +124,10 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/img/%E5%BC%80%E5%90%AFftp.png">
 <meta property="og:image" content="http://c.biancheng.net/uploads/allimg/181008/2-1Q00Q41T01J.jpg">
-<meta property="og:updated_time" content="2020-03-23T07:14:02.621Z">
+<meta property="og:image" content="http://yoursite.com/img/lsblk.png">
+<meta property="og:image" content="http://yoursite.com/img/fdisk.png">
+<meta property="og:image" content="http://yoursite.com/img/fidsk_%E5%88%86%E5%8C%BA.png">
+<meta property="og:updated_time" content="2020-03-23T09:25:23.602Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="Linux入门入门命令su - root：进入管理员账户，密码输入不显示！因为安全机制。 halt：关机命令，必须在root命令下 pwd：查看当前目录 exit：退出当前账户">
@@ -486,7 +489,17 @@
 <p>　　有时使用vim编辑某个文件时，提示.xxx.sh.swp文件已存在，是因为异常退出后，linux会生成一个swp文件，无论选择什么，下次进入还是会提示</p>
 <p>　　使用ls命令无法查看到。</p>
 <p>　　解决方法：使用rm -rf .xxx.sh.swp ,删除文件即可。</p>
-<h4 id="磁盘管理和磁盘分区"><a href="#磁盘管理和磁盘分区" class="headerlink" title="磁盘管理和磁盘分区"></a>磁盘管理和磁盘分区</h4><p>目前磁盘分区主要有MBR以及GPT两种格式，</p>
+<h4 id="磁盘管理和磁盘分区"><a href="#磁盘管理和磁盘分区" class="headerlink" title="磁盘管理和磁盘分区"></a>磁盘管理和磁盘分区</h4><p>目前磁盘分区主要有MBR以及GPT两种格式，两种格式所用的分区不太一样。分别事fdisk和gdisk来处理分区！</p>
+<p><code>lsblk列出系统上的所有磁盘列表：</code></p>
+<p><img src="/img/lsblk.png" alt></p>
+<p><code>blkid列出设备的UUID等参数</code></p>
+<p><code>parted列出磁盘的分区表类型与分区信息</code></p>
+<h5 id="所用命令"><a href="#所用命令" class="headerlink" title="所用命令"></a>所用命令</h5><p>  281  fdisk -l</p>
+<p><img src="/img/fdisk.png" alt></p>
+<p>  282  fdisk /dev/sdc</p>
+<p><img src="/img/fidsk_%E5%88%86%E5%8C%BA.png" alt></p>
+<p>下面的分区操作就可以根据提示进行了，分区完毕后就可以w保存。</p>
+<p>  283   #如果保存异常 就partprobe<br>  284  lsblk<br>  285  df  <strong>查看磁盘分区情况和挂载位置，且只能查看挂载的分区</strong><br>  287  mkfs -t ext4 /dev/sdc1  <strong>磁盘格式化</strong><br>  288  mkfs -t ext4 /dev/sdc5<br>  289  mkfs -t ext4 /dev/sdc6<br>  290  mkfs -t ext4 /dev/sdc7<br>  291  mkfs -t ext4 -L “saisai_disk” /dev/sdc6  <strong>给磁盘分区起个名字</strong><br>  292  dumpe2fs /dev/sdc6<br>  293  mkdir /mnt/disk1 /mnt/disk5 /mnt/disk6 /mnt/disk7 <strong>创建文件夹，映射磁盘。就是挂载点，将磁盘挂载到此文件夹，可以挂载多个磁盘</strong><br>  294  ls /mnt<br>  295  <strong>#开始 挂载</strong><br>  297  mount -t ext4 /dev/sdc1 /mnt/disk1<br>  298  mount -t ext4 /dev/sdc5 /mnt/disk1<br>  299  mount -t ext4 /dev/sdc1 /mnt/disk1<br>  300  mount -t ext4 /dev/sdc5 /mnt/disk5<br>  301  mount -t ext4 /dev/sdc6 /mnt/disk6<br>  302  mount -t ext4 /dev/sdc7 /mnt/disk7<br>  303  mount<br>  304  df -Th<br>  305  cd /mnt/disk1<br>  306  vim f1<br>  307  ls<br>  308  cd<br>  309  umount /dev/sdb1  <strong>卸载磁盘</strong><br>  310  umount /dev/sdc1<br>  311  umount /dev/sdc2<br>  312  umount /dev/sdc5<br>  313  umount /dev/sdc6<br>  314  umount /dev/sdc7<br>  315  df -Th<br>  316  umount /dev/sdc1<br>  317  umount /dev/sdc5<br>  318  df -Th<br>  319  umount /dev/sdc1<br>  320  df -Th<br>  321  vim /etc/fstab <strong>配置文件永久挂载</strong><br>  322  fdisk -l<br>  323  vim /etc/fstab<br>  324  mount -a<br>  325  mount<br>  326  df -Th<br>  327  fdisk /dev/sdc<br>  328  reboot<br>  329  mkswap /dev/sdc7<br>  330  free<br>  331  swapon /dev/sdc7<br>  332  free<br>  333  swapoff /dev/sdb7<br>  334  swapoff /dev/sdc7<br>  335  free<br>  336  cd /mnt</p>
 
       
     </div>
@@ -710,7 +723,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux入门"><span class="nav-number">1.</span> <span class="nav-text">Linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#入门命令"><span class="nav-number">1.1.</span> <span class="nav-text">入门命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用软件的安装"><span class="nav-number">1.2.</span> <span class="nav-text">应用软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用rpm工具安装应用软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用rpm工具安装应用软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ftp，实现文件传输"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装ftp，实现文件传输</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#X-window"><span class="nav-number">1.3.</span> <span class="nav-text">X window</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux的init命令"><span class="nav-number">1.3.1.</span> <span class="nav-text">Linux的init命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Vim编辑器"><span class="nav-number">1.3.2.</span> <span class="nav-text">Vim编辑器</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁盘管理和磁盘分区"><span class="nav-number">1.4.</span> <span class="nav-text">磁盘管理和磁盘分区</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux入门"><span class="nav-number">1.</span> <span class="nav-text">Linux入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#入门命令"><span class="nav-number">1.1.</span> <span class="nav-text">入门命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用软件的安装"><span class="nav-number">1.2.</span> <span class="nav-text">应用软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用rpm工具安装应用软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用rpm工具安装应用软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装ftp，实现文件传输"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装ftp，实现文件传输</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#X-window"><span class="nav-number">1.3.</span> <span class="nav-text">X window</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux的init命令"><span class="nav-number">1.3.1.</span> <span class="nav-text">Linux的init命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Vim编辑器"><span class="nav-number">1.3.2.</span> <span class="nav-text">Vim编辑器</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁盘管理和磁盘分区"><span class="nav-number">1.4.</span> <span class="nav-text">磁盘管理和磁盘分区</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#所用命令"><span class="nav-number">1.4.1.</span> <span class="nav-text">所用命令</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

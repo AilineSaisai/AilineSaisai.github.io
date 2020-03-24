@@ -117,14 +117,14 @@
 <meta name="description" content="注解创建对象（四者功能相同） ComponentController：一般用在表现层Service：一般用在业务层Repository：一般用在持久层">
 <meta name="keywords" content="-死亡框架">
 <meta property="og:type" content="article">
-<meta property="og:title" content="spring基本注解">
+<meta property="og:title" content="spring和springboot基本注解">
 <meta property="og:url" content="http://yoursite.com/2020/03/12/spring基本注解/index.html">
 <meta property="og:site_name" content="Ailine">
 <meta property="og:description" content="注解创建对象（四者功能相同） ComponentController：一般用在表现层Service：一般用在业务层Repository：一般用在持久层">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-22T09:18:36.544Z">
+<meta property="og:updated_time" content="2020-03-23T13:50:45.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="spring基本注解">
+<meta name="twitter:title" content="spring和springboot基本注解">
 <meta name="twitter:description" content="注解创建对象（四者功能相同） ComponentController：一般用在表现层Service：一般用在业务层Repository：一般用在持久层">
 
 
@@ -160,7 +160,7 @@
 
 
 
-  <title>spring基本注解 | Ailine</title>
+  <title>spring和springboot基本注解 | Ailine</title>
   
 
 
@@ -320,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">spring基本注解</h1>
+          <h1 class="post-title" itemprop="name headline">spring和springboot基本注解</h1>
         
 
         <div class="post-meta">
@@ -392,7 +392,55 @@
 <h4 id="Scope："><a href="#Scope：" class="headerlink" title="Scope："></a>Scope：</h4><p>@Scope（value=“singleton/prototype”）</p>
 <p>单例多例</p>
 <p>singleton prototype</p>
-<h4 id="PreDestroy-销毁方法"><a href="#PreDestroy-销毁方法" class="headerlink" title="PreDestroy:销毁方法"></a>PreDestroy:销毁方法</h4><h4 id="PostConstruct：初始化方法"><a href="#PostConstruct：初始化方法" class="headerlink" title="PostConstruct：初始化方法"></a>PostConstruct：初始化方法</h4>
+<h4 id="PreDestroy-销毁方法"><a href="#PreDestroy-销毁方法" class="headerlink" title="PreDestroy:销毁方法"></a>PreDestroy:销毁方法</h4><h4 id="PostConstruct：初始化方法"><a href="#PostConstruct：初始化方法" class="headerlink" title="PostConstruct：初始化方法"></a>PostConstruct：初始化方法</h4><h4 id="Value获取值和-configurationProperties获取值比较"><a href="#Value获取值和-configurationProperties获取值比较" class="headerlink" title="Value获取值和@configurationProperties获取值比较"></a>Value获取值和@configurationProperties获取值比较</h4><table>
+<thead>
+<tr>
+<th></th>
+<th>@configurationProperties</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能</td>
+<td>批量注入配置文件中的属性</td>
+<td>一个一个指定</td>
+</tr>
+<tr>
+<td>松散绑定</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>SpEL</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>JSR303数据校验</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>复杂类型封装</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+</tbody></table>
+<p>如果我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，就使用@Value</p>
+<h4 id="PropertySource"><a href="#PropertySource" class="headerlink" title="PropertySource"></a>PropertySource</h4><p><code>@PropertySource(value = {&quot;classpath:xx.properties&quot;})</code></p>
+<p>指定JavaBean从xx.properties配置文件中获取属性值。</p>
+<h4 id="ImportResource"><a href="#ImportResource" class="headerlink" title="ImportResource"></a>ImportResource</h4><p>spring boot里面没有spring的配置文件，我们自己编写的配置文件，不能自动识别。想让Spring的配置文件生效，加载进去；</p>
+<p><code>@ImportResource</code>标记在一个配置类上 <strong>spring boot不推荐使用</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ImportResource</span>(locations = &#123;<span class="string">"classpath:xx.xml"</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>在spring中可以读取配置文件，使配置文件中所配置的类加载到容器中。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ApplicationContext ac = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">"bean.xml"</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="Bean"><a href="#Bean" class="headerlink" title="Bean"></a>Bean</h4><p><strong>springboot推荐使用配置类的形式，在配置类上添加<code>@Configuration</code>注解，指明当前类使配置类。</strong></p>
+<p>再写一个方法，使用<code>@Bean</code>使方法的返回值添加到容器中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> HelloService <span class="title">helloService</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> HelloService;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
@@ -615,7 +663,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注解创建对象"><span class="nav-number">1.</span> <span class="nav-text">注解创建对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Component"><span class="nav-number">1.1.</span> <span class="nav-text">Component</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Controller：一般用在表现层"><span class="nav-number">1.1.1.</span> <span class="nav-text">Controller：一般用在表现层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Service：一般用在业务层"><span class="nav-number">1.1.2.</span> <span class="nav-text">Service：一般用在业务层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Repository：一般用在持久层"><span class="nav-number">1.1.3.</span> <span class="nav-text">Repository：一般用在持久层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注入数据的注解："><span class="nav-number">1.2.</span> <span class="nav-text">注入数据的注解：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Autowried："><span class="nav-number">1.2.1.</span> <span class="nav-text">Autowried：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Qualifier："><span class="nav-number">1.2.2.</span> <span class="nav-text">Qualifier：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Resource："><span class="nav-number">1.2.3.</span> <span class="nav-text">Resource：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#value："><span class="nav-number">1.2.4.</span> <span class="nav-text">value：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Scope："><span class="nav-number">1.2.5.</span> <span class="nav-text">Scope：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PreDestroy-销毁方法"><span class="nav-number">1.2.6.</span> <span class="nav-text">PreDestroy:销毁方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PostConstruct：初始化方法"><span class="nav-number">1.2.7.</span> <span class="nav-text">PostConstruct：初始化方法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注解创建对象"><span class="nav-number">1.</span> <span class="nav-text">注解创建对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Component"><span class="nav-number">1.1.</span> <span class="nav-text">Component</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Controller：一般用在表现层"><span class="nav-number">1.1.1.</span> <span class="nav-text">Controller：一般用在表现层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Service：一般用在业务层"><span class="nav-number">1.1.2.</span> <span class="nav-text">Service：一般用在业务层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Repository：一般用在持久层"><span class="nav-number">1.1.3.</span> <span class="nav-text">Repository：一般用在持久层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注入数据的注解："><span class="nav-number">1.2.</span> <span class="nav-text">注入数据的注解：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Autowried："><span class="nav-number">1.2.1.</span> <span class="nav-text">Autowried：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Qualifier："><span class="nav-number">1.2.2.</span> <span class="nav-text">Qualifier：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Resource："><span class="nav-number">1.2.3.</span> <span class="nav-text">Resource：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#value："><span class="nav-number">1.2.4.</span> <span class="nav-text">value：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Scope："><span class="nav-number">1.2.5.</span> <span class="nav-text">Scope：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PreDestroy-销毁方法"><span class="nav-number">1.2.6.</span> <span class="nav-text">PreDestroy:销毁方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PostConstruct：初始化方法"><span class="nav-number">1.2.7.</span> <span class="nav-text">PostConstruct：初始化方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Value获取值和-configurationProperties获取值比较"><span class="nav-number">1.2.8.</span> <span class="nav-text">Value获取值和@configurationProperties获取值比较</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PropertySource"><span class="nav-number">1.2.9.</span> <span class="nav-text">PropertySource</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ImportResource"><span class="nav-number">1.2.10.</span> <span class="nav-text">ImportResource</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Bean"><span class="nav-number">1.2.11.</span> <span class="nav-text">Bean</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
