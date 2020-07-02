@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-24T13:21:30.849Z</updated>
+  <updated>2020-07-02T07:19:15.952Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSM整合</title>
+    <link href="http://yoursite.com/2020/06/30/SSM%E6%95%B4%E5%90%88/"/>
+    <id>http://yoursite.com/2020/06/30/SSM整合/</id>
+    <published>2020-06-30T13:40:28.000Z</published>
+    <updated>2020-07-02T07:19:15.952Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Spring整合Mybatis&quot;&gt;&lt;a href=&quot;#Spring整合Mybatis&quot; class=&quot;headerlink&quot; title=&quot;Spring整合Mybatis&quot;&gt;&lt;/a&gt;Spring整合Mybatis&lt;/h2&gt;&lt;p&gt;ssm整合主要是配置文件，实现简单的整合。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Thymeleaf</title>
