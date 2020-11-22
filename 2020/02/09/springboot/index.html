@@ -122,7 +122,7 @@
 <meta property="og:site_name" content="Ailine">
 <meta property="og:description" content="自动配置序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-22T23:59:18.532Z">
+<meta property="og:updated_time" content="2020-07-24T02:13:25.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot">
 <meta name="twitter:description" content="自动配置序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；">
@@ -392,7 +392,7 @@
       
 
       
-        <h3 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h3><p>序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；</p>
+        <h2 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h2><p>序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；</p>
 <a id="more"></a>
 
 <p><strong>serialVersionUID有两种显示的生成方式：</strong><br>一是默认的1L，比如：private static final long serialVersionUID = 1L;        </p>
@@ -401,10 +401,7 @@
 <p>将Serializable class without serialVersionUID的warning改成ignore即可。</p>
 <p>当实现java.io.Serializable接口中没有显示的定义serialVersionUID变量的时候，JAVA序列化机制会根据Class自动生成一个serialVersionUID作序列化版本比较用，这种情况下，如果Class文件(类名，方法明等)没有发生变化(增加空格，换行，增加注释等等)，就算再编译多次，serialVersionUID也不会变化的。</p>
 <p>如果我们不希望通过编译来强制划分软件版本，即实现序列化接口的实体能够兼容先前版本，就需要显示的定义一个serialVersionUID，类型为long的变量。不修改这个变量值的序列化实体，都可以相互进行序列化和反序列化。</p>
-<p>（1）序列化实体类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.demo.entity.serializable; <span class="keyword">import</span> java.io.Serializable; <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Persion</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;     <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">4359709211352400087L</span>;    <span class="keyword">public</span> Long id;    <span class="keyword">public</span> String name;    <span class="keyword">public</span> <span class="keyword">final</span> String userName;     <span class="function"><span class="keyword">public</span> <span class="title">Persion</span><span class="params">(Long id, String name)</span></span>&#123;        <span class="keyword">this</span>.id = id;        <span class="keyword">this</span>.name = name;        userName = <span class="string">"dddbbb"</span>;    &#125;     <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;        <span class="keyword">return</span> id.toString() + <span class="string">"--"</span> + name.toString();    &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>（2）序列化功能：</p>
+<p>## </p>
 
       
     </div>
@@ -551,7 +548,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -573,7 +570,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -628,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自动配置"><span class="nav-number">1.</span> <span class="nav-text">自动配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自动配置"><span class="nav-number">1.</span> <span class="nav-text">自动配置</span></a></li></ol></div>
             
 
           </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-02T07:19:15.952Z</updated>
+  <updated>2020-11-22T02:30:42.394Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HashMap底层原理</title>
+    <link href="http://yoursite.com/2020/11/22/HashMap%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/"/>
+    <id>http://yoursite.com/2020/11/22/HashMap底层原理/</id>
+    <published>2020-11-22T02:03:47.000Z</published>
+    <updated>2020-11-22T02:30:42.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;HashMap是由数组和链表组合而成&quot;&gt;&lt;a href=&quot;#HashMap是由数组和链表组合而成&quot; class=&quot;headerlink&quot; title=&quot;HashMap是由数组和链表组合而成&quot;&gt;&lt;/a&gt;HashMap是由数组和链表组合而成&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="-Java源码" scheme="http://yoursite.com/tags/Java%E6%BA%90%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置类</title>
+    <link href="http://yoursite.com/2020/10/30/%E9%85%8D%E7%BD%AE%E7%B1%BB/"/>
+    <id>http://yoursite.com/2020/10/30/配置类/</id>
+    <published>2020-10-30T08:44:52.000Z</published>
+    <updated>2020-10-30T08:48:41.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;分页插件&quot;&gt;&lt;a href=&quot;#分页插件&quot; class=&quot;headerlink&quot; title=&quot;分页插件&quot;&gt;&lt;/a&gt;分页插件&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="-Configuration" scheme="http://yoursite.com/tags/Configuration/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>仓库管理系统</title>
+    <link href="http://yoursite.com/2020/10/22/%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2020/10/22/仓库管理系统/</id>
+    <published>2020-10-22T08:25:31.000Z</published>
+    <updated>2020-10-22T08:44:30.351Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;登陆功能的实现&quot;&gt;&lt;a href=&quot;#登陆功能的实现&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="-项目" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JVM从入门到仍是入门</title>
+    <link href="http://yoursite.com/2020/07/09/JVM%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%BB%8D%E6%98%AF%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2020/07/09/JVM从入门到仍是入门/</id>
+    <published>2020-07-09T00:56:29.000Z</published>
+    <updated>2020-07-09T00:58:42.036Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;为什么学JVM&quot;&gt;&lt;a href=&quot;#为什么学JVM&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="-星星之火" scheme="http://yoursite.com/tags/%E6%98%9F%E6%98%9F%E4%B9%8B%E7%81%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)总结</title>
+    <link href="http://yoursite.com/2020/07/03/org-apache-ibatis-binding-BindingException-Invalid-bound-statement-not-found-%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2020/07/03/org-apache-ibatis-binding-BindingException-Invalid-bound-statement-not-found-总结/</id>
+    <published>2020-07-03T12:48:55.000Z</published>
+    <updated>2020-07-03T13:06:40.542Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天做ssm项目整合是，遇见了 org.apache.ibatis.binding.BindingException: Invalid bound statement (not&lt;br&gt;  found)的异常，但是奇怪的是在idea中添加单元测试能正常查出结果，代码如下：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-异常处理" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSM整合</title>
     <link href="http://yoursite.com/2020/06/30/SSM%E6%95%B4%E5%90%88/"/>
     <id>http://yoursite.com/2020/06/30/SSM整合/</id>
     <published>2020-06-30T13:40:28.000Z</published>
-    <updated>2020-07-02T07:19:15.952Z</updated>
+    <updated>2020-07-21T14:20:47.200Z</updated>
     
     <summary type="html">
     
@@ -103,24 +211,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2020/03/21/%E8%B7%AF%E5%BE%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://yoursite.com/2020/03/21/路径区别/</id>
-    <published>2020-03-21T13:28:45.120Z</published>
-    <updated>2020-03-23T01:45:48.474Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;/ 网络根目录&lt;/p&gt;
-&lt;p&gt;./  当前路径&lt;/p&gt;
-&lt;p&gt;../ 上一级路径&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Controller注解</title>
     <link href="http://yoursite.com/2020/03/21/Controller%E6%B3%A8%E8%A7%A3/"/>
     <id>http://yoursite.com/2020/03/21/Controller注解/</id>
@@ -173,6 +263,26 @@
     
     
       <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路径区别</title>
+    <link href="http://yoursite.com/2020/03/10/%E8%B7%AF%E5%BE%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2020/03/10/路径区别/</id>
+    <published>2020-03-10T10:55:31.000Z</published>
+    <updated>2020-07-05T14:26:42.428Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;/ 网络根目录&lt;/p&gt;
+&lt;p&gt;./  当前路径&lt;/p&gt;
+&lt;p&gt;../ 上一级路径&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-星星之火" scheme="http://yoursite.com/tags/%E6%98%9F%E6%98%9F%E4%B9%8B%E7%81%AB/"/>
     
   </entry>
   
@@ -302,11 +412,11 @@
     <link href="http://yoursite.com/2020/02/09/springboot/"/>
     <id>http://yoursite.com/2020/02/09/springboot/</id>
     <published>2020-02-09T12:06:09.522Z</published>
-    <updated>2020-03-22T23:59:18.532Z</updated>
+    <updated>2020-07-24T02:13:25.516Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;自动配置&quot;&gt;&lt;a href=&quot;#自动配置&quot; class=&quot;headerlink&quot; title=&quot;自动配置&quot;&gt;&lt;/a&gt;自动配置&lt;/h3&gt;&lt;p&gt;序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；&lt;/p&gt;
+      &lt;h2 id=&quot;自动配置&quot;&gt;&lt;a href=&quot;#自动配置&quot; class=&quot;headerlink&quot; title=&quot;自动配置&quot;&gt;&lt;/a&gt;自动配置&lt;/h2&gt;&lt;p&gt;序列化操作时会把系统当前类的serialVersionUID写入到序列化文件中，当反序列化时系统会自动检测文件中的serialVersionUID，判断它是否与当前类中的serialVersionUID一致。如果一致说明序列化文件的版本与当前类的版本是一样的，可以反序列化成功，否则就失败；&lt;/p&gt;
     
     </summary>
     
@@ -314,103 +424,6 @@
     
     
       <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mybatis</title>
-    <link href="http://yoursite.com/2019/07/30/mybatis/"/>
-    <id>http://yoursite.com/2019/07/30/mybatis/</id>
-    <published>2019-07-30T06:26:59.994Z</published>
-    <updated>2020-06-23T15:36:29.350Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;学习框架&quot;&gt;&lt;a href=&quot;#学习框架&quot; class=&quot;headerlink&quot; title=&quot;学习框架&quot;&gt;&lt;/a&gt;学习框架&lt;/h3&gt;&lt;p&gt;Javase还没学明白的我开始了学习框架的时光，整个人都感觉不太对了，入门教程让我有一种似曾相识的感觉。回想当时刚刚接触Java时的窘迫，怎么装jdk都有bug的痛苦，环境变量极度让电脑陷入崩溃。哈哈。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="-死亡框架" scheme="http://yoursite.com/tags/%E6%AD%BB%E4%BA%A1%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySql笔记</title>
-    <link href="http://yoursite.com/2019/07/30/MySQL/"/>
-    <id>http://yoursite.com/2019/07/30/MySQL/</id>
-    <published>2019-07-29T19:00:30.124Z</published>
-    <updated>2019-08-18T01:56:47.913Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;MySql&quot;&gt;&lt;a href=&quot;#MySql&quot; class=&quot;headerlink&quot; title=&quot;MySql&quot;&gt;&lt;/a&gt;MySql&lt;/h1&gt;&lt;h4 id=&quot;学习目的&quot;&gt;&lt;a href=&quot;#学习目的&quot; class=&quot;headerlink&quot; title=&quot;学习目的&quot;&gt;&lt;/a&gt;学习目的&lt;/h4&gt;&lt;p&gt;学习Java半年了，一直没有认真学习，一学期的时间浪费了大半。暑假时间，开始恶补自己的课程，希望毕业之前能成为成为高级程序员的一份子吧。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="编程美学" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E7%BE%8E%E5%AD%A6/"/>
-    
-    
-      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/07/20/hello-world/"/>
-    <id>http://yoursite.com/2019/07/20/hello-world/</id>
-    <published>2019-07-20T02:07:17.024Z</published>
-    <updated>2020-02-24T09:00:54.578Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript笔记</title>
-    <link href="http://yoursite.com/2019/07/16/JavaScript%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2019/07/16/JavaScript笔记/</id>
-    <published>2019-07-16T10:33:37.811Z</published>
-    <updated>2020-03-22T09:19:41.073Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&quot;&gt;&lt;/a&gt;JavaScript&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;==目标：学习JavaScript，掌握JavaScript核心知识，能够灵活运用其语法知识。==&lt;/p&gt;
-&lt;p&gt;==计划：一个月的学习时间，每天学习两个小时（如果可以的话）。==&lt;/p&gt;
-&lt;p&gt;简介：JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在&lt;a href=&quot;https://baike.baidu.com/item/HTML&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTML&lt;/a&gt;（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="编程美学" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E7%BE%8E%E5%AD%A6/"/>
-    
-    
-      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode</title>
-    <link href="http://yoursite.com/2019/07/06/LeetCode/"/>
-    <id>http://yoursite.com/2019/07/06/LeetCode/</id>
-    <published>2019-07-06T13:44:29.611Z</published>
-    <updated>2020-02-23T13:12:57.301Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;了解算法及数据结构&quot;&gt;&lt;a href=&quot;#了解算法及数据结构&quot; class=&quot;headerlink&quot; title=&quot;了解算法及数据结构&quot;&gt;&lt;/a&gt;了解算法及数据结构&lt;/h3&gt;&lt;h4 id=&quot;数据结构&quot;&gt;&lt;a href=&quot;#数据结构&quot; class=&quot;headerlink&quot; title=&quot;数据结构&quot;&gt;&lt;/a&gt;数据结构&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率的算法。数据结构往往同高效的检索算法和索引技术有关。本质就是数据本身与数据之间的关系。&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法之路" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-      <category term="-入坑系列" scheme="http://yoursite.com/tags/%E5%85%A5%E5%9D%91%E7%B3%BB%E5%88%97/"/>
     
   </entry>
   
