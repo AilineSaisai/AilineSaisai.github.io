@@ -114,18 +114,18 @@
 
 
 
-<meta name="description" content="登陆功能的实现在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。 shiro必备类创建ActiveUser类123456public class ActiveUser &amp;#123;    private User user;    private List&amp;lt;String&amp;gt; roles;    private">
+<meta name="description" content="登陆功能的实现在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。">
 <meta name="keywords" content="-项目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="仓库管理系统">
 <meta property="og:url" content="http://yoursite.com/2020/10/22/仓库管理系统/index.html">
 <meta property="og:site_name" content="Ailine">
-<meta property="og:description" content="登陆功能的实现在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。 shiro必备类创建ActiveUser类123456public class ActiveUser &amp;#123;    private User user;    private List&amp;lt;String&amp;gt; roles;    private">
+<meta property="og:description" content="登陆功能的实现在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-10-22T08:44:30.351Z">
+<meta property="og:updated_time" content="2020-12-01T08:02:18.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="仓库管理系统">
-<meta name="twitter:description" content="登陆功能的实现在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。 shiro必备类创建ActiveUser类123456public class ActiveUser &amp;#123;    private User user;    private List&amp;lt;String&amp;gt; roles;    private">
+<meta name="twitter:description" content="登陆功能的实现在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。">
 
 
 
@@ -371,6 +371,8 @@
 
       
         <h3 id="登陆功能的实现"><a href="#登陆功能的实现" class="headerlink" title="登陆功能的实现"></a>登陆功能的实现</h3><p>在使用easycode生成代码时，注意清除表头，以及在实体类上加@TableName()注解，表明是哪表，或者修改模板，自动生成。</p>
+<a id="more"></a>
+
 <h4 id="shiro必备类"><a href="#shiro必备类" class="headerlink" title="shiro必备类"></a>shiro必备类</h4><h5 id="创建ActiveUser类"><a href="#创建ActiveUser类" class="headerlink" title="创建ActiveUser类"></a>创建ActiveUser类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ActiveUser</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> User user;</span><br><span class="line">    <span class="keyword">private</span> List&lt;String&gt; roles;</span><br><span class="line">    <span class="keyword">private</span> List&lt;String&gt; permissions;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h5 id="创建UserRealm"><a href="#创建UserRealm" class="headerlink" title="创建UserRealm"></a>创建UserRealm</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserRealm</span> <span class="keyword">extends</span> <span class="title">AuthorizingRealm</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    UserService userService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.getClass().getSimpleName();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 认证</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> authenticationToken</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> AuthenticationException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> AuthenticationInfo <span class="title">doGetAuthenticationInfo</span><span class="params">(AuthenticationToken authenticationToken)</span> <span class="keyword">throws</span> AuthenticationException </span>&#123;</span><br><span class="line"></span><br><span class="line">        QueryWrapper&lt;User&gt; queryWrapper = <span class="keyword">new</span> QueryWrapper&lt;&gt;();</span><br><span class="line">        queryWrapper.eq(<span class="string">"loginname"</span>,authenticationToken.getPrincipal().toString());</span><br><span class="line">        User user = userService.getOne(queryWrapper);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">null</span> != user) &#123;</span><br><span class="line">            ActiveUser activeUser = <span class="keyword">new</span> ActiveUser();</span><br><span class="line">            activeUser.setUser(user);</span><br><span class="line">            ByteSource credentialsSalt = ByteSource.Util.bytes(user.getSalt());</span><br><span class="line">            SimpleAuthenticationInfo info = <span class="keyword">new</span> SimpleAuthenticationInfo(activeUser,user.getPwd(),credentialsSalt,<span class="keyword">this</span>.getName());</span><br><span class="line">            <span class="keyword">return</span> info;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 授权</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> principalCollection</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> AuthorizationInfo <span class="title">doGetAuthorizationInfo</span><span class="params">(PrincipalCollection principalCollection)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -525,7 +527,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -547,7 +549,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
